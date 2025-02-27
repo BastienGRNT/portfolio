@@ -1,0 +1,15 @@
+C:\Users\greno\Code\CodeFiles\portfolio\CODEEE\ApiPortfolio - Deploy\ApiPortfolio\bin\Release\net9.0\linux-x64\publish\ApiPortfolio
+C:\Users\greno\Code\CodeFiles\portfolio\CODEEE\ApiPortfolio - Deploy\ApiPortfolio\bin\Release\net9.0\linux-x64\publish\appsettings.Development.json
+C:\Users\greno\Code\CodeFiles\portfolio\CODEEE\ApiPortfolio - Deploy\ApiPortfolio\bin\Release\net9.0\linux-x64\publish\appsettings.json
+C:\Users\greno\Code\CodeFiles\portfolio\CODEEE\ApiPortfolio - Deploy\ApiPortfolio\bin\Release\net9.0\linux-x64\publish\ApiPortfolio.deps.json
+C:\Users\greno\Code\CodeFiles\portfolio\CODEEE\ApiPortfolio - Deploy\ApiPortfolio\bin\Release\net9.0\linux-x64\publish\ApiPortfolio.runtimeconfig.json
+C:\Users\greno\Code\CodeFiles\portfolio\CODEEE\ApiPortfolio - Deploy\ApiPortfolio\bin\Release\net9.0\linux-x64\publish\ApiPortfolio.pdb
+C:\Users\greno\Code\CodeFiles\portfolio\CODEEE\ApiPortfolio - Deploy\ApiPortfolio\bin\Release\net9.0\linux-x64\publish\DotNetEnv.dll
+C:\Users\greno\Code\CodeFiles\portfolio\CODEEE\ApiPortfolio - Deploy\ApiPortfolio\bin\Release\net9.0\linux-x64\publish\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\greno\Code\CodeFiles\portfolio\CODEEE\ApiPortfolio - Deploy\ApiPortfolio\bin\Release\net9.0\linux-x64\publish\Microsoft.OpenApi.dll
+C:\Users\greno\Code\CodeFiles\portfolio\CODEEE\ApiPortfolio - Deploy\ApiPortfolio\bin\Release\net9.0\linux-x64\publish\Npgsql.dll
+C:\Users\greno\Code\CodeFiles\portfolio\CODEEE\ApiPortfolio - Deploy\ApiPortfolio\bin\Release\net9.0\linux-x64\publish\Sprache.dll
+C:\Users\greno\Code\CodeFiles\portfolio\CODEEE\ApiPortfolio - Deploy\ApiPortfolio\bin\Release\net9.0\linux-x64\publish\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\greno\Code\CodeFiles\portfolio\CODEEE\ApiPortfolio - Deploy\ApiPortfolio\bin\Release\net9.0\linux-x64\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\greno\Code\CodeFiles\portfolio\CODEEE\ApiPortfolio - Deploy\ApiPortfolio\bin\Release\net9.0\linux-x64\publish\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\greno\Code\CodeFiles\portfolio\CODEEE\ApiPortfolio - Deploy\ApiPortfolio\bin\Release\net9.0\linux-x64\publish\ApiPortfolio.dll
