@@ -29,6 +29,7 @@
 }
 
 .Title-link {
+    text-decoration: none;
     font-family: 'SharpGroteskBold', serif;
     font-size: 35px;
     color: #FCF9CE;

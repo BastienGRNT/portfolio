@@ -1,6 +1,10 @@
+import {Link, useNavigate} from "react-router-dom";
 import "../styles/Header.css";
 
 export default function Header() {
+
+    const navigate = useNavigate();
+
     return (
         <header className="Header">
             <nav className="Navbar">
@@ -12,7 +16,7 @@ export default function Header() {
                 </div>
                 <div className="Titles">
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                    <a className="Title-link">GRENOT Bastien</a>
+                    <Link to="/" className="Title-link">GRENOT BASTIEN</Link>
                 </div>
                 <div className="Social">
                     <a href="https://www.linkedin.com/in/bastiengrnt/" target="_blank" rel="noreferrer"><img src="/Logo/linkedin.svg" alt="LinkedIn"/></a>

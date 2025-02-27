@@ -1,6 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import "../styles/Home.css";
 
+
+
 export default function Home() {
+
+    const navigate = useNavigate();
+
     return (
         <div className="Main">
             <div className="Main1">
@@ -13,10 +19,9 @@ export default function Home() {
                 </div>
             </div>
             <div className="Main2">
-                <button className="Bouton" type="button">En savoir plus sur moi</button>
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                <button className="Bouton" type="button" onClick={() => navigate("/me")}>En savoir plus sur moi</button>
                 <a target="_blank" rel="noreferrer"><img src="/Logo/moi.svg" alt="LinkedIn"/></a>
-                <button className="Bouton" type="button">Découvrir mes projets</button>
+                <button className="Bouton" type="button" onClick={() => navigate("/project")}>Découvrir mes projets</button>
             </div>
         </div>
     )

@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'SharpGroteskBold';
+    src: url('../../public/fonts/SharpGrotesk-Bold20.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SharpGroteskMedium';
+    src: url('../../public/fonts/SharpGrotesk-Medium20.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --primary-color: #EC361E;
+    --secondary-color: #FCF9CE;
+    --shadow-color: #F13322;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --border-radius: 15px;
+    --border-width: 3px;
+}
+
+.Projet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(1rem, 3vw, 3.75rem);
+    padding: clamp(1.5rem, 5vw, 3.75rem) 0.5rem;
+    width: 100%;
+    max-width: 2500px;
+    margin: 0 auto;
+}
+
+.Card {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+    box-shadow: 7px 7px 0px var(--shadow-color); /* Ajustement pour correspondre à l'image */
+    border-radius: var(--border-radius);
+    border: var(--border-width) solid var(--primary-color);
+    /* Suppression de la transition */
+}
+
+/* Suppression de l'effet hover sur la carte */
+/* .Card:hover {
+    transform: translateY(-5px);
+} */
+
+.TitleDiv {
+    width: 100%;
+    border-bottom: var(--border-width) solid var(--primary-color);
+    padding: clamp(1rem, 3vw, 1.875rem) 0.5rem;
+    text-align: center;
+}
+
+.Title {
+    font-family: 'SharpGroteskBold', sans-serif;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: var(--primary-color);
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.TechnoDiv {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: var(--border-width) solid var(--primary-color);
+    padding: clamp(1rem, 3vw, 1.875rem) 0.5rem;
+    gap: 0.5rem;
+}
+
+.Techno {
+    font-family: 'SharpGroteskMedium', sans-serif;
+    font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+    color: #000;
+    width: 100%;
+    margin: 0 0 0.5rem 0;
+}
+
+.TechnoImg {
+    width: clamp(25px, 5vw, 40px);
+    height: auto;
+    margin: 5px;
+}
+
+.ImageDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: clamp(1rem, 3vw, 1.875rem) 0.5rem;
+    border-bottom: var(--border-width) solid var(--primary-color);
+    overflow: hidden;
+}
+
+.ImageImg {
+    max-width: 100%;
+    height: auto;
+    max-height: clamp(150px, 30vw, 200px);
+    display: block;
+    object-fit: contain;
+}
+
+.GitDiv, .WebDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.625rem 0.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.GithubImg, .WebImg {
+    width: clamp(20px, 3vw, 25px);
+    height: auto;
+    /* Suppression de la transition */
+}
+
+.Github, .Web {
+    font-family: 'SharpGroteskMedium', sans-serif;
+    font-size: clamp(0.75rem, 1.5vw, 1rem);
+    color: #000;
+    margin: 0;
+    text-decoration: none;
+}
+
+/* Suppression des effets hover sur les liens */
+/* .GitDiv a:hover, .WebDiv a:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+.GitDiv a:hover img, .WebDiv a:hover img {
+    transform: scale(1.1);
+} */
+
+@media screen and (max-width: 768px) {
+    .Card {
+        box-shadow: 7px 7px 0px var(--shadow-color); /* Gardons la même ombre sur mobile */
+    }
+
+    .GitDiv, .WebDiv {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Projet {
+        padding: 1rem 0.25rem;
+    }
+
+    .TitleDiv, .TechnoDiv, .ImageDiv {
+        padding: 0.75rem 0.25rem;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .Card {
+        box-shadow: 7px 7px 0px var(--shadow-color); /* Même ombre en mode sombre */
+    }
+
+    .Github, .Web {
+        color: #222;
+    }
+}
