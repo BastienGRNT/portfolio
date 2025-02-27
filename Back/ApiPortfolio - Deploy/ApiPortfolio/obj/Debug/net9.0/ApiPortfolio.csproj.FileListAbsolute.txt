@@ -115,3 +115,43 @@ C:\Users\greno\Code\CodeFiles\portfolio\CODEEE\ApiPortfolio\ApiPortfolio\obj\Deb
 C:\Users\greno\Code\CodeFiles\portfolio\CODEEE\ApiPortfolio\ApiPortfolio\obj\Debug\net9.0\ApiPortfolio.pdb
 C:\Users\greno\Code\CodeFiles\portfolio\CODEEE\ApiPortfolio\ApiPortfolio\obj\Debug\net9.0\ApiPortfolio.genruntimeconfig.cache
 C:\Users\greno\Code\CodeFiles\portfolio\CODEEE\ApiPortfolio\ApiPortfolio\obj\Debug\net9.0\ref\ApiPortfolio.dll
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\bin\Debug\net9.0\appsettings.json
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\bin\Debug\net9.0\ApiPortfolio.staticwebassets.endpoints.json
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\bin\Debug\net9.0\ApiPortfolio.exe
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\bin\Debug\net9.0\ApiPortfolio.deps.json
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\bin\Debug\net9.0\ApiPortfolio.runtimeconfig.json
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\bin\Debug\net9.0\ApiPortfolio.dll
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\bin\Debug\net9.0\ApiPortfolio.pdb
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\bin\Debug\net9.0\DotNetEnv.dll
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\bin\Debug\net9.0\Npgsql.dll
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\bin\Debug\net9.0\Sprache.dll
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\obj\Debug\net9.0\ApiPortfolio.csproj.AssemblyReference.cache
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\obj\Debug\net9.0\ApiPortfolio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\obj\Debug\net9.0\ApiPortfolio.AssemblyInfoInputs.cache
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\obj\Debug\net9.0\ApiPortfolio.AssemblyInfo.cs
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\obj\Debug\net9.0\ApiPortfolio.csproj.CoreCompileInputs.cache
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\obj\Debug\net9.0\ApiPortfolio.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\obj\Debug\net9.0\ApiPortfolio.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\obj\Debug\net9.0\ApiPortfolio.sourcelink.json
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\obj\Debug\net9.0\scopedcss\bundle\ApiPortfolio.styles.css
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\obj\Debug\net9.0\staticwebassets\msbuild.ApiPortfolio.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\obj\Debug\net9.0\staticwebassets\msbuild.ApiPortfolio.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\obj\Debug\net9.0\staticwebassets\msbuild.build.ApiPortfolio.props
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.ApiPortfolio.props
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.ApiPortfolio.props
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\obj\Debug\net9.0\staticwebassets.pack.json
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\obj\Debug\net9.0\ApiPortf.A0DCDF7E.Up2Date
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\obj\Debug\net9.0\ApiPortfolio.dll
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\obj\Debug\net9.0\refint\ApiPortfolio.dll
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\obj\Debug\net9.0\ApiPortfolio.pdb
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\obj\Debug\net9.0\ApiPortfolio.genruntimeconfig.cache
+C:\Users\BASTIEN\Code\CodeFiles\Portfolio\Back\ApiPortfolio - Deploy\ApiPortfolio\obj\Debug\net9.0\ref\ApiPortfolio.dll
