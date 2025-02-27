@@ -1,0 +1,13 @@
+.Grille {
+    background-color: #FCF9CE;
+    background-image:
+            linear-gradient(rgba(236, 54, 30, 0.28) 0.5px, transparent 1px),
+            linear-gradient(90deg, rgba(236, 54, 30, 0.28) 0.5px, transparent 1px);
+    background-size: 125px 125px;
+    background-repeat: repeat;
+    width: 100%;
+    min-height: 100vh; /* Hauteur minimale = écran complet */
+    height: 100%; /* S'assure que la div prend la hauteur totale */
+    display: flex;
+    flex-direction: column;
+}

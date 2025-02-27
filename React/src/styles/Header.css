@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'SharpGroteskBold';
+    src: url('../../public/fonts/SharpGrotesk-Bold20.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SharpGroteskMedium';
+    src: url('../../public/fonts/SharpGrotesk-Medium20.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.Header {
+    background-color: #EC361E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+}
+
+.Title-link {
+    font-family: 'SharpGroteskBold', serif;
+    font-size: 35px;
+    color: #FCF9CE;
+}
+
+.Liste-link {
+    font-family: 'SharpGroteskMedium', serif;
+    font-size: 25px;
+    color: #FCF9CE;
+}
+
+.Title {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.Liste {
+    text-align: left;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+.Liste a {
+    padding: 10px;
+}
+
+.Social {
+    text-align: right;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+}
+.Social a{
+    text-decoration: none;
+    margin: 0 5px;
+    background-color: transparent;
+}
+.Social img {
+    width: 35px;
+    background-color: transparent;
+}

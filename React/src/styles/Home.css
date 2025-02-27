@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'SharpGroteskBold';
+    src: url('../../public/fonts/SharpGrotesk-Bold20.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SharpGroteskMedium';
+    src: url('../../public/fonts/SharpGrotesk-Medium20.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontserratMedium';
+    src: url('../../public/fonts/Montserrat-Medium.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Main{
+
+}
+
+.Main1 {
+    background-color: #FCF9CE;
+    width: 50%;
+    margin: 50px auto 0;
+}
+
+.Home1 {
+    background-color: #FCF9CE;
+}
+
+.Objet {
+    font-family: 'SharpGroteskBold', serif;
+    font-size: 30px;
+    color: #EC361E;
+    margin-bottom: 0px;
+}
+
+.Metier {
+    font-family: 'SharpGroteskMedium', serif;
+    font-size: 25px;
+    color: #EC361E;
+    margin-top: 0px;
+}
+
+.Home2 {
+    background-color: #FCF9CE;
+}
+
+.Projet {
+    font-family: 'MontserratMedium', serif;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: justify;
+    text-justify: inter-word;
+    word-spacing: 3px;
+}
+
+.Main2 {
+    width: 80%;
+    margin: 10px auto 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+
+.Main2 img {
+    width: 260px;
+}
+
+.Bouton {
+    font-family: 'SharpGroteskBold', sans-serif;
+    font-size: 18px;
+    color: #EC361E;
+    background-color: #FCF9CE;
+    border: 3px solid #EC361E;
+    border-radius: 15px;
+    padding: 12px 20px;
+    font-weight: bold;
+    box-shadow: 6px 6px 0px #F13322;
+}
+
+
+
