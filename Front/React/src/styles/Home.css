@@ -81,11 +81,11 @@
 
 .Projet {
     font-family: 'MontserratMedium', serif;
-    font-size: clamp(0.875rem, 2vw, 0.9375rem);
+    font-size: clamp(1rem, 2vw, 1.5rem);
     line-height: 1.6;
     text-align: justify;
     text-justify: inter-word;
-    word-spacing: 3px;
+    word-spacing: 9px;
     margin: 0;
     hyphens: auto;
     background-color: var(--secondary-color);
@@ -185,3 +185,4 @@
         transition: none !important;
     }
 }
+
