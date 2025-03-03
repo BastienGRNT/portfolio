@@ -1,0 +1,92 @@
+/* Importation des polices */
+@font-face {
+    font-family: 'SharpGroteskBold';
+    src: url('../../public/fonts/SharpGrotesk-Bold20.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SharpGroteskMedium';
+    src: url('../../public/fonts/SharpGrotesk-Medium20.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MontserratMedium';
+    src: url('../../public/fonts/Montserrat-Medium.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Variables globales */
+:root {
+    /* Couleurs */
+
+    /* Typographie */
+    --font-primary: 'SharpGroteskBold', sans-serif;
+    --font-secondary: 'SharpGroteskMedium', sans-serif;
+    --font-alt: 'MontserratMedium', sans-serif;
+
+    /* Dimensions et espaces */
+    --header-height: clamp(70px, 10vw, 110px);
+    --title-font-size: clamp(24px, 4vw, 35px);
+    --nav-font-size: clamp(16px, 2.5vw, 25px);
+    --icon-size: clamp(25px, 3vw, 35px);
+
+    /* Espacement */
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+
+    /* Bordures */
+    --border-radius: 15px;
+    --border-width: 3px; /* Priorité à la dernière définition */
+
+    /* Dimensions des cartes */
+    --card-width: 350px;
+    --card-height: 500px;
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-medium: 0.3s ease;
+    --transition-slow: 0.5s ease;
+}
+
+
+[data-theme="light"] {
+    --button-text-color: #EC361E;
+    --grid-color: #EC361E33;
+    --home-titre-color: #EC361E;
+    --main2-color: #000000;
+    --text-header-color: #FCF9CE;
+    --border-color: #64B772;
+    --card-color: #FCF9CE;
+    --title-color: #EC361E;
+    --text-color: #000000;
+    --primary-color: #EC361E;
+    --secondary-color: #FCF9CE;
+    --shadow-color-alt: #64B772; /* Choix initial par défaut */
+    --shadow-color: #F13322; /* Alternative selon les besoins */
+}
+
+[data-theme="dark"] {
+    --button-text-color: #ffffff;
+    --grid-color: #575757;
+    --home-titre-color: #ffffff;
+    --main2-color: #ffffff;
+    --text-header-color: #ffffff;
+    --border-color: #ffffff;
+    --card-color: #282828;
+    --title-color: #ffffff;
+    --text-color: #ffffff;
+    --primary-color: #575757;
+    --secondary-color: #121212;
+    --shadow-color: #1a1c26;
+    --shadow-color-alt: #1a1c26;
+}

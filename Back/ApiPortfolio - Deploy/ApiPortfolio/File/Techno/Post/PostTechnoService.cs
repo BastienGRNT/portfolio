@@ -1,4 +1,4 @@
-﻿﻿using System.Xml.Schema;
+﻿using System.Xml.Schema;
 using ApiPortfolio.Sql;
 using Npgsql;
 using System.IO;

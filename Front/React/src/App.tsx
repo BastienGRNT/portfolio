@@ -5,6 +5,7 @@ import Me from './pages/Me';
 import Projects from './pages/Projects';
 import Header from './components/Header';
 import Background from './components/Background';
+import "./styles/styles.css";
 
 export default function App(){
   return (

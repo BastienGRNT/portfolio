@@ -1,36 +1,3 @@
-@font-face {
-    font-family: 'SharpGroteskBold';
-    src: url('../../public/fonts/SharpGrotesk-Bold20.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'SharpGroteskMedium';
-    src: url('../../public/fonts/SharpGrotesk-Medium20.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-:root {
-    --primary-color: #EC361E;
-    --secondary-color: #FCF9CE;
-    --shadow-color: #F13322;
-    --spacing-sm: 0.5rem;
-    --spacing-md: 1rem;
-    --spacing-lg: 1.5rem;
-    --spacing-xl: 2rem;
-    --border-radius: 15px;
-    --border-width: 8px;
-    --card-width: 400px;
-    --transition-fast: 0.2s ease;
-    --transition-medium: 0.3s ease;
-    --transition-slow: 0.5s ease;
-}
-
-/* Animation pour l'apparition des projets */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -85,21 +52,20 @@
 .Card {
     width: 100%;
     max-width: var(--card-width);
-    max-height: 600px;
+    max-height: var(--card-height);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
     padding: 0.35rem;
-    background-color: var(--secondary-color);
-    box-shadow: 60px 60px 0px var(--shadow-color);
+    background-color: var(--card-color);
+    box-shadow: 60px 60px 0px var(--shadow-color-alt);
     border-radius: var(--border-radius);
-    border: var(--border-width) solid var(--primary-color);
+    border: var(--border-width) solid var(--shadow-color-alt);
     transition: transform var(--transition-medium), box-shadow var(--transition-medium);
     animation: fadeInUp var(--transition-slow) forwards;
     opacity: 0;
-    /* Animation délai différent pour chaque carte */
     animation-delay: calc(var(--order, 0) * 0.1s);
 }
 
@@ -116,13 +82,13 @@
 
 .Card:hover {
     transform: translateY(-15px);
-    box-shadow: 70px 70px 0px var(--shadow-color);
+    box-shadow: 70px 70px 0px var(--shadow-color-alt);
 }
 
 .TitleDiv {
     width: 100%;
-    border-bottom: var(--border-width) solid var(--primary-color);
-    padding: clamp(0.5rem, 1.5vw, 1rem) 0.5rem;
+    border-bottom: var(--border-width) solid var(--border-color);
+    padding: clamp(0.25rem, 1vw, 0.75rem) 0.5rem;
     text-align: center;
     transition: background-color var(--transition-fast);
 }
@@ -130,12 +96,11 @@
 .Title {
     font-family: 'SharpGroteskBold', sans-serif;
     font-size: clamp(1.5rem, 1.7vw, 1.75rem);
-    color: var(--primary-color);
+    color: var(--title-color);
     margin: 0;
     word-wrap: break-word;
     line-height: 1.2;
     transition: color var(--transition-fast);
-    /* Suppression de l'animation de surlignement */
 }
 
 .TechnoDiv {
@@ -156,14 +121,11 @@
 .Techno {
     font-family: 'SharpGroteskMedium', sans-serif;
     font-size: clamp(0.75rem, 1.3vw, 1rem);
-    color: #000;
+    color: var(--text-color);
     width: 100%;
     margin: 0 0 0.3rem 0;
 }
 
-.Card:hover .Techno {
-    color: var(--primary-color);
-}
 
 .TechnoImg {
     width: clamp(30px, 4vw, 45px);
@@ -242,7 +204,7 @@
 .Github, .Web {
     font-family: 'SharpGroteskMedium', sans-serif;
     font-size: clamp(0.85rem, 1.5vw, 1.1rem);
-    color: #000;
+    color: var(--text-color);
     margin: 0;
     text-decoration: none;
     position: relative;
@@ -261,7 +223,7 @@
 }
 
 .Github:hover, .Web:hover {
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 .Github:hover::after, .Web:hover::after {
@@ -270,13 +232,13 @@
 
 @media screen and (max-width: 768px) {
     .Card {
-        box-shadow: 5px 5px 0px var(--shadow-color);
+        box-shadow: 5px 5px 0px var(--shadow-color-alt);
         max-width: 350px;
     }
 
     .Card:hover {
         transform: translateY(-8px);
-        box-shadow: 10px 10px 0px var(--shadow-color);
+        box-shadow: 10px 10px 0px var(--shadow-color-alt);
     }
 
     .GitDiv, .WebDiv {
@@ -317,15 +279,15 @@
 
 @media (prefers-color-scheme: dark) {
     .Card {
-        box-shadow: 5px 5px 0px var(--shadow-color);
+        box-shadow: 5px 5px 0px var(--shadow-color-alt);
     }
 
     .Card:hover {
-        box-shadow: 10px 10px 0px var(--shadow-color);
+        box-shadow: 10px 10px 0px var(--shadow-color-alt);
     }
 
     .Github, .Web {
-        color: #222;
+        color: var(--text-color);
     }
 
     .Card:hover .TechnoDiv {

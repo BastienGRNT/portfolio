@@ -1,31 +1,3 @@
-@font-face {
-    font-family: 'SharpGroteskBold';
-    src: url('../../public/fonts/SharpGrotesk-Bold20.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap; /* Améliore le chargement des polices */
-}
-
-@font-face {
-    font-family: 'SharpGroteskMedium';
-    src: url('../../public/fonts/SharpGrotesk-Medium20.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap; /* Améliore le chargement des polices */
-}
-
-:root {
-    --primary-color: #EC361E;
-    --secondary-color: #FCF9CE;
-    --header-height: clamp(70px, 10vw, 110px);
-    --title-font-size: clamp(24px, 4vw, 35px);
-    --nav-font-size: clamp(16px, 2.5vw, 25px);
-    --icon-size: clamp(25px, 3vw, 35px);
-    --spacing-sm: 10px;
-    --spacing-md: 15px;
-    --spacing-lg: 20px;
-}
-
 .Navbar {
     display: flex;
     justify-content: space-between;
@@ -52,27 +24,26 @@
     text-decoration: none;
     font-family: 'SharpGroteskBold', serif;
     font-size: var(--title-font-size);
-    color: var(--secondary-color);
+    color: var(--text-header-color);
     transition: color 0.2s ease;
     white-space: nowrap; /* Empêche le titre de se couper sur plusieurs lignes */
 }
 
 .Title-link:hover, .Title-link:focus {
-    color: rgba(252, 249, 206, 0.8); /* Léger effet au survol */
+    color: rgba(251, 250, 237, 0.8); /* Léger effet au survol */
     outline: none; /* Amélioration a11y */
 }
 
 .Liste-link {
     font-family: 'SharpGroteskMedium', serif;
     font-size: var(--nav-font-size);
-    color: var(--secondary-color);
+    color: var(--text-header-color);
     transition: color 0.2s ease, transform 0.2s ease;
     position: relative;
     text-decoration: none;
 }
 
 .Liste-link:hover, .Liste-link:focus {
-    color: rgba(252, 249, 206, 0.8); /* Léger effet au survol */
     transform: translateY(-2px); /* Léger effet de soulèvement */
     outline: none; /* Amélioration a11y */
 }
@@ -85,7 +56,7 @@
     height: 2px;
     bottom: -4px;
     left: 0;
-    background-color: var(--secondary-color);
+    background-color: var(--border-color);
     transition: width 0.3s ease;
 }
 
@@ -236,4 +207,93 @@
     .Header {
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     }
+}
+
+/* From Uiverse.io by JkHuger */
+.toggle-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.toggle-slot {
+    font-size: 10px;
+    position: relative;
+    height: 3.5em;
+    width: 7em;
+    border: 0px solid transparent;
+    border-radius: 10em;
+    background-color: white;
+    transition: background-color 250ms;
+}
+
+.toggle-checkbox:checked ~ .toggle-slot {
+    background-color: #374151;
+}
+
+.toggle-button {
+    transform: translate(0.3em, 0.25em);
+    position: absolute;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    background-color: #ffeccf;
+    box-shadow: inset 0px 0px 0px 0.75em #ffbb52;
+    transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .toggle-button {
+    background-color: #485367;
+    box-shadow: inset 0px 0px 0px 0.75em white;
+    transform: translate(3.65em, 0.25em);
+}
+
+.sun-icon {
+    position: absolute;
+    height: 6em;
+    width: 6em;
+    color: #ffbb52;
+}
+
+.sun-icon-wrapper {
+    position: absolute;
+    height: 6em;
+    width: 6em;
+    opacity: 1;
+    transform: translate(2em, 2em) rotate(15deg);
+    transform-origin: 50% 50%;
+    transition: opacity 150ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper {
+    opacity: 0;
+    transform: translate(3em, 2em) rotate(0deg);
+}
+
+.moon-icon {
+    position: absolute;
+    height: 6em;
+    width: 6em;
+    color: white;
+}
+
+.moon-icon-wrapper {
+    position: absolute;
+    height: 6em;
+    width: 6em;
+    opacity: 0;
+    transform: translate(11em, 2em) rotate(0deg);
+    transform-origin: 50% 50%;
+    transition: opacity 150ms, transform 500ms cubic-bezier(.26,2.5,.46,.71);
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper {
+    opacity: 1;
+    transform: translate(2em, 2em) rotate(-15deg);
+}
+
+.themeChecker{
+    margin-right: 10px;
 }
