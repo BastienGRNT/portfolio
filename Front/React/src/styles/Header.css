@@ -3,6 +3,7 @@
     src: url('../../public/fonts/SharpGrotesk-Bold20.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
+    font-display: swap; /* Améliore le chargement des polices */
 }
 
 @font-face {
@@ -10,6 +11,19 @@
     src: url('../../public/fonts/SharpGrotesk-Medium20.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap; /* Améliore le chargement des polices */
+}
+
+:root {
+    --primary-color: #EC361E;
+    --secondary-color: #FCF9CE;
+    --header-height: clamp(70px, 10vw, 110px);
+    --title-font-size: clamp(24px, 4vw, 35px);
+    --nav-font-size: clamp(16px, 2.5vw, 25px);
+    --icon-size: clamp(25px, 3vw, 35px);
+    --spacing-sm: 10px;
+    --spacing-md: 15px;
+    --spacing-lg: 20px;
 }
 
 .Navbar {
@@ -20,25 +34,63 @@
 }
 
 .Header {
-    background-color: #EC361E;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height: 110px;
+    width: 99%;
+    height: var(--header-height);
+    padding: 0 clamp(10px, 3vw, 30px);
+    position: sticky; /* Optionnel: pour fixer le header au défilement */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile */
+    transition: height 0.3s ease; /* Animation fluide pour les changements de taille */
 }
 
 .Title-link {
     text-decoration: none;
     font-family: 'SharpGroteskBold', serif;
-    font-size: 35px;
-    color: #FCF9CE;
+    font-size: var(--title-font-size);
+    color: var(--secondary-color);
+    transition: color 0.2s ease;
+    white-space: nowrap; /* Empêche le titre de se couper sur plusieurs lignes */
+}
+
+.Title-link:hover, .Title-link:focus {
+    color: rgba(252, 249, 206, 0.8); /* Léger effet au survol */
+    outline: none; /* Amélioration a11y */
 }
 
 .Liste-link {
     font-family: 'SharpGroteskMedium', serif;
-    font-size: 25px;
-    color: #FCF9CE;
+    font-size: var(--nav-font-size);
+    color: var(--secondary-color);
+    transition: color 0.2s ease, transform 0.2s ease;
+    position: relative;
+    text-decoration: none;
+}
+
+.Liste-link:hover, .Liste-link:focus {
+    color: rgba(252, 249, 206, 0.8); /* Léger effet au survol */
+    transform: translateY(-2px); /* Léger effet de soulèvement */
+    outline: none; /* Amélioration a11y */
+}
+
+/* Effet de soulignement au survol */
+.Liste-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--secondary-color);
+    transition: width 0.3s ease;
+}
+
+.Liste-link:hover::after, .Liste-link:focus::after {
+    width: 100%;
 }
 
 .Title {
@@ -47,7 +99,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: clamp(10px, 2vw, 20px);
 }
 
 .Liste {
@@ -56,11 +108,12 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 20px;
+    padding: clamp(10px, 2vw, 20px);
+    gap: clamp(5px, 1vw, 10px);
 }
 
 .Liste a {
-    padding: 10px;
+    padding: clamp(5px, 1vw, 10px);
 }
 
 .Social {
@@ -69,15 +122,118 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 15px;
-    padding: 15px;
+    gap: clamp(8px, 1.5vw, 15px);
+    padding: clamp(8px, 1.5vw, 15px);
 }
-.Social a{
+
+.Social a {
     text-decoration: none;
-    margin: 0 5px;
+    margin: 0 clamp(3px, 0.5vw, 5px);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.Social a:hover, .Social a:focus {
+    transform: scale(1.15); /* Effet d'agrandissement au survol */
+    outline: none; /* Amélioration a11y */
+}
+
+.Social img {
+    width: var(--icon-size);
+    height: var(--icon-size);
     background-color: transparent;
 }
-.Social img {
-    width: 35px;
-    background-color: transparent;
+
+/* Menu hamburger pour mobile */
+.MobileMenuToggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.MobileMenuToggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: var(--secondary-color);
+    transition: transform 0.3s ease;
+}
+
+/* Media queries pour la responsivité */
+@media screen and (max-width: 768px) {
+    .Header {
+        flex-wrap: wrap;
+        height: auto;
+        min-height: var(--header-height);
+    }
+
+    .Title {
+        flex: 2;
+        order: 1;
+    }
+
+    .MobileMenuToggle {
+        display: block;
+        order: 2;
+        margin-left: auto;
+    }
+
+    .Liste {
+        flex-basis: 100%;
+        order: 3;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+        padding: 0;
+    }
+
+    .Liste.open {
+        max-height: 300px;
+        padding: clamp(10px, 2vw, 20px);
+    }
+
+    .Social {
+        flex-basis: 100%;
+        order: 4;
+        justify-content: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+        padding: 0;
+    }
+
+    .Social.open {
+        max-height: 100px;
+        padding: clamp(8px, 1.5vw, 15px);
+    }
+}
+
+/* Pour les très petits écrans */
+@media screen and (max-width: 480px) {
+    .Liste a {
+        padding: 8px 5px;
+    }
+
+    .Title-link {
+        font-size: clamp(22px, 6vw, 28px);
+    }
+
+    .Liste-link {
+        font-size: clamp(14px, 4vw, 18px);
+    }
+}
+
+/* Préférence de mode sombre (optionnel) */
+@media (prefers-color-scheme: dark) {
+    .Header {
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
 }

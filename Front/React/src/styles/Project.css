@@ -23,7 +23,48 @@
     --spacing-lg: 1.5rem;
     --spacing-xl: 2rem;
     --border-radius: 15px;
-    --border-width: 3px;
+    --border-width: 8px;
+    --card-width: 400px;
+    --transition-fast: 0.2s ease;
+    --transition-medium: 0.3s ease;
+    --transition-slow: 0.5s ease;
+}
+
+/* Animation pour l'apparition des projets */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation pour les techs */
+@keyframes popIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    70% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Animation du conteneur lors du chargement */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .Projet {
@@ -36,39 +77,65 @@
     max-width: 2500px;
     margin: 0 auto;
     background-color: transparent;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.2s;
 }
 
 .Card {
     width: 100%;
-    max-width: 500px;
+    max-width: var(--card-width);
+    max-height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    padding: 0.5rem;
+    padding: 0.35rem;
     background-color: var(--secondary-color);
-    box-shadow: 7px 7px 0px var(--shadow-color); /* Ajustement pour correspondre à l'image */
+    box-shadow: 60px 60px 0px var(--shadow-color);
     border-radius: var(--border-radius);
     border: var(--border-width) solid var(--primary-color);
+    transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+    animation: fadeInUp var(--transition-slow) forwards;
+    opacity: 0;
+    /* Animation délai différent pour chaque carte */
+    animation-delay: calc(var(--order, 0) * 0.1s);
 }
 
+.Card:nth-child(1) { --order: 1; }
+.Card:nth-child(2) { --order: 2; }
+.Card:nth-child(3) { --order: 3; }
+.Card:nth-child(4) { --order: 4; }
+.Card:nth-child(5) { --order: 5; }
+.Card:nth-child(6) { --order: 6; }
+.Card:nth-child(7) { --order: 7; }
+.Card:nth-child(8) { --order: 8; }
+.Card:nth-child(9) { --order: 9; }
+.Card:nth-child(10) { --order: 10; }
+
 .Card:hover {
+    transform: translateY(-15px);
+    box-shadow: 70px 70px 0px var(--shadow-color);
 }
 
 .TitleDiv {
     width: 100%;
     border-bottom: var(--border-width) solid var(--primary-color);
-    padding: clamp(1rem, 3vw, 1.875rem) 0.5rem;
+    padding: clamp(0.5rem, 1.5vw, 1rem) 0.5rem;
     text-align: center;
+    transition: background-color var(--transition-fast);
 }
 
 .Title {
     font-family: 'SharpGroteskBold', sans-serif;
-    font-size: clamp(2rem, 2vw, 2.25rem);
+    font-size: clamp(1.5rem, 1.7vw, 1.75rem);
     color: var(--primary-color);
     margin: 0;
     word-wrap: break-word;
+    line-height: 1.2;
+    transition: color var(--transition-fast);
+    /* Suppression de l'animation de surlignement */
 }
 
 .TechnoDiv {
@@ -78,22 +145,38 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: clamp(1rem, 3vw, 1.875rem) 0.5rem;
-    gap: 0.5rem;
+    padding: clamp(0.5rem, 1.5vw, 1rem) 0.5rem;
+    gap: 0.3rem;
+    transition: background-color var(--transition-fast);
+}
+
+.Card:hover .TechnoDiv {
 }
 
 .Techno {
     font-family: 'SharpGroteskMedium', sans-serif;
-    font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+    font-size: clamp(0.75rem, 1.3vw, 1rem);
     color: #000;
     width: 100%;
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 0.3rem 0;
+}
+
+.Card:hover .Techno {
+    color: var(--primary-color);
 }
 
 .TechnoImg {
-    width: clamp(40px, 5vw, 55px);
+    width: clamp(30px, 4vw, 45px);
     height: auto;
-    margin: 5px;
+    margin: 3px;
+    transition: transform var(--transition-medium);
+    /* Animation initialement supprimée pour éviter la disparition */
+    /* animation: popIn 0.5s forwards; */
+    animation-delay: calc((var(--order, 0) * 0.1s) + 0.5s);
+}
+
+.Card:hover .TechnoImg {
+    transform: scale(1.2);
 }
 
 .ImageDiv {
@@ -101,16 +184,35 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: clamp(1rem, 3vw, 1.875rem) 0.5rem;
+    padding: clamp(0.5rem, 1.5vw, 1rem) 0.5rem;
     overflow: hidden;
+    position: relative;
+    aspect-ratio: 1 / 1;
+    box-sizing: border-box;
+}
+
+.ImageContainer {
+    width: 90%;
+    height: 90%;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow var(--transition-medium);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.Card:hover .ImageContainer {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .ImageImg {
-    max-width: 100%;
-    height: auto;
-    max-height: clamp(150px, 30vw, 200px);
+    width: 100%;
+    height: 100%;
     display: block;
-    object-fit: contain;
+    object-fit: cover;
+    /* Suppression de la transition et transformation pour éviter le zoom */
 }
 
 .GitDiv, .WebDiv {
@@ -118,29 +220,63 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.625rem 0.5rem;
+    padding: 0.4rem 0.4rem;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.3rem;
+    transition: background-color var(--transition-fast);
 }
 
+
 .GithubImg, .WebImg {
-    width: clamp(20px, 3vw, 25px);
+    width: clamp(24px, 3vw, 30px);
     height: auto;
-    /* Suppression de la transition */
+    transition: transform var(--transition-fast), opacity var(--transition-fast);
+    opacity: 0.7;
+}
+
+.GitImg:hover .GithubImg, .WImg:hover .WebImg {
+    transform: scale(1.2) rotate(-5deg);
+    opacity: 1;
 }
 
 .Github, .Web {
     font-family: 'SharpGroteskMedium', sans-serif;
-    font-size: clamp(0.75rem, 1.5vw, 1rem);
+    font-size: clamp(0.85rem, 1.5vw, 1.1rem);
     color: #000;
     margin: 0;
     text-decoration: none;
+    position: relative;
+    transition: color var(--transition-fast);
 }
 
+.Github::after, .Web::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width var(--transition-medium);
+}
+
+.Github:hover, .Web:hover {
+    color: var(--primary-color);
+}
+
+.Github:hover::after, .Web:hover::after {
+    width: 100%;
+}
 
 @media screen and (max-width: 768px) {
     .Card {
-        box-shadow: 7px 7px 0px var(--shadow-color); /* Gardons la même ombre sur mobile */
+        box-shadow: 5px 5px 0px var(--shadow-color);
+        max-width: 350px;
+    }
+
+    .Card:hover {
+        transform: translateY(-8px);
+        box-shadow: 10px 10px 0px var(--shadow-color);
     }
 
     .GitDiv, .WebDiv {
@@ -153,17 +289,45 @@
         padding: 1rem 0.25rem;
     }
 
+    .Card {
+        max-width: 300px;
+    }
+
     .TitleDiv, .TechnoDiv, .ImageDiv {
-        padding: 0.75rem 0.25rem;
+        padding: 0.5rem 0.25rem;
+    }
+
+    .Card:hover {
+        transform: translateY(-5px);
+    }
+}
+
+/* Animations de préférence réduite de mouvement */
+@media (prefers-reduced-motion: reduce) {
+    .Card,
+    .TechnoImg,
+    .Card:hover,
+    .GitImg:hover .GithubImg,
+    .WImg:hover .WebImg {
+        animation: none;
+        transform: none;
+        transition: none;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     .Card {
-        box-shadow: 7px 7px 0px var(--shadow-color); /* Même ombre en mode sombre */
+        box-shadow: 5px 5px 0px var(--shadow-color);
+    }
+
+    .Card:hover {
+        box-shadow: 10px 10px 0px var(--shadow-color);
     }
 
     .Github, .Web {
         color: #222;
+    }
+
+    .Card:hover .TechnoDiv {
     }
 }

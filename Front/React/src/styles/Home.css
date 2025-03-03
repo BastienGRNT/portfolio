@@ -34,6 +34,7 @@
     --spacing-xl: 3rem;
 }
 
+
 .Main {
     width: 100%;
     max-width: 1200px;
@@ -43,22 +44,21 @@
 }
 
 .Main1 {
-    background-color: var(--secondary-color);
+    background-color: transparent;
     width: 100%;
     max-width: 1500px;
     margin: clamp(1.5rem, 5vw, 3rem) auto 0;
     padding: clamp(1rem, 3vw, 1.5rem);
     border-radius: var(--border-radius);
     box-sizing: border-box;
-    border: 1px solid var(--primary-color);
 }
 
 .Home1 {
-    background-color: var(--secondary-color);
-    margin-bottom: clamp(0.5rem, 2vw, 1rem);
+    background-color: transparent;
 }
 
 .Objet {
+    background-color: var(--secondary-color);
     font-family: 'SharpGroteskBold', serif;
     font-size: clamp(1.25rem, 4vw, 1.875rem);
     color: var(--primary-color);
@@ -68,27 +68,32 @@
 }
 
 .Metier {
+    background-color: var(--secondary-color);
     font-family: 'SharpGroteskMedium', serif;
     font-size: clamp(1.125rem, 3.5vw, 1.5625rem);
     color: var(--primary-color);
     margin-top: 0px;
     word-wrap: break-word;
+    margin-bottom: 0px;
+    width: fit-content;
+    padding-right: 15px; /* Ajoute 5px à gauche et à droite */
 }
 
 .Home2 {
-    background-color: var(--secondary-color);
+    background-color: transparent;
 }
 
-.Projet {
+.ProjetHome {
+    margin: 0;
+    background-color: var(--secondary-color);
     font-family: 'MontserratMedium', serif;
     font-size: clamp(1rem, 2vw, 1.5rem);
     line-height: 1.6;
     text-align: justify;
     text-justify: inter-word;
     word-spacing: 9px;
-    margin: 0;
     hyphens: auto;
-    background-color: var(--secondary-color);
+    padding: clamp(0.5rem, 2vw, 1.5rem) 0.25rem;
 }
 
 .Main2 {
@@ -170,14 +175,15 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    .Main1, .Home1, .Home2 {
-        background-color: var(--secondary-color);
+    .Projet {
+        background-color: var(--secondary-color) !important; /* Applique le fond même en mode sombre */
     }
 
     .Bouton {
         background-color: var(--secondary-color);
     }
 }
+
 
 
 @media (prefers-reduced-motion: reduce) {

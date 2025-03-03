@@ -51,7 +51,9 @@ export default function Projects() {
                     <div className="ImageDiv">
                         {project.imagePaths.length > 0 && (
                             project.imagePaths.map((path, index) => (
-                                <img key={index} src={path} alt={`Image, ${index}`} className="ImageImg" />
+                                <div className="ImageContainer">
+                                    <img key={index} src={path} alt={`Image, ${index}`} className="ImageImg" />
+                                </div>
                             ))
                         )}
                     </div>
@@ -61,7 +63,7 @@ export default function Projects() {
                         </a>
                         <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="Github">Voir le repo sur Github</a>
                     </div>
-                    <div className="WebDiv">
+                    {/* <div className="WebDiv">
                         {project.webLink ? (
                             <>
                                 <a href={project.webLink} target="_blank" rel="noreferrer" className="WImg"><img src="/Logo/web.svg" alt="Web" className="WebImg"/></a>
@@ -70,7 +72,7 @@ export default function Projects() {
                         ) : (
                             <p></p>
                         )}
-                    </div>
+                    </div> */}
                 </div>
             ))}
         </div>

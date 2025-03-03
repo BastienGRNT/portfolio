@@ -15,7 +15,7 @@ export default function Home() {
                     <p className="Metier">Développeur informatique</p>
                 </div>
                 <div className="Home2">
-                    <p className="Projet">Passionné par la programmation, je conçois, développe et déploie des applications, sites web, logiciels et automatisations. Toujours prêt à relever de nouveaux défis, je cherche un stage pour mettre mes compétences en action. Et si ça matche, je serais aussi partant pour une alternance de deux ans à partir d’octobre 2025</p>
+                    <p className="ProjetHome">Passionné par la programmation, je conçois, développe et déploie des applications, sites web, logiciels et automatisations. Toujours prêt à relever de nouveaux défis, je cherche un stage pour mettre mes compétences en action. Et si ça matche, je serais aussi partant pour une alternance de deux ans à partir d’octobre 2025</p>
                 </div>
             </div>
             <div className="Main2">

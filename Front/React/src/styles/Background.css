@@ -1,13 +1,44 @@
 .Grille {
     background-color: #FCF9CE;
     background-image:
-            linear-gradient(rgba(236, 54, 30, 0.28) 0.5px, transparent 1px),
-            linear-gradient(90deg, rgba(236, 54, 30, 0.28) 0.5px, transparent 1px);
+            linear-gradient(rgba(236, 54, 30, 0.2) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(236, 54, 30, 0.2) 1px, transparent 1px);
     background-size: 125px 125px;
+    background-position: 0 0;
+    background-attachment: fixed;  /* Fixe la grille lors du défilement */
     background-repeat: repeat;
     width: 100%;
-    min-height: 100vh; /* Hauteur minimale = écran complet */
-    height: 100%; /* S'assure que la div prend la hauteur totale */
+    min-height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;  /* Pour s'assurer que la grille est positionnée correctement */
+    z-index: 0;  /* Pour éviter les problèmes de superposition */
+}
+
+
+@media screen and (max-width: 1200px) {
+    .Grille {
+        background-size: 100px 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Grille {
+        background-size: 75px 75px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Grille {
+        background-size: 50px 50px;
+    }
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
