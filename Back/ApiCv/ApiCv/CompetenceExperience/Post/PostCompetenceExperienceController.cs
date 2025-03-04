@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
-[Route("api/")]
+[Route("api/competence-experience")]
 public class PostCompetenceExperienceController : ControllerBase
 {
     private readonly PostCompetenceExperienceService _postCompetenceExperienceService;
@@ -12,7 +12,7 @@ public class PostCompetenceExperienceController : ControllerBase
         _postCompetenceExperienceService = new PostCompetenceExperienceService();
     }
 
-    [HttpPost("competence-experience")]
+    [HttpPost]
     public IActionResult AddCompetenceExperience([FromBody] PostCompetenceExperienceModele competenceExperience)
     {
         if (competenceExperience == null)

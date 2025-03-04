@@ -2,5 +2,5 @@
 
 public class PostHardSkillsModele
 {
-    
+    public string Nom { get; set; }
 }

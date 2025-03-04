@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
-[Route("api/")]
+[Route("api/formation")]
 public class PostFormationController : ControllerBase
 {
     private readonly PostFormationService _postFormationService;
@@ -12,7 +12,7 @@ public class PostFormationController : ControllerBase
         _postFormationService = new PostFormationService();
     }
 
-    [HttpPost("formation")]
+    [HttpPost]
     public IActionResult AddFormation([FromBody] PostFormationModele formation)
     {
         if (formation == null)

@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
-[Route("api/")]
+[Route("api/experience-pro")]
 public class GetExperienceProController : ControllerBase
 {
     private readonly GetExperienceProService _getExperienceProService;
@@ -12,7 +12,7 @@ public class GetExperienceProController : ControllerBase
         _getExperienceProService = new GetExperienceProService();
     }
 
-    [HttpGet("experience-pro")]
+    [HttpGet]
     public IActionResult GetExperiencePro()
     {
         try

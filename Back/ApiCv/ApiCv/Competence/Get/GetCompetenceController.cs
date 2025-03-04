@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
-[Route("api/")]
+[Route("api/competence")]
 public class GetCompetenceController : ControllerBase
 {
     private readonly GetCompetenceService _getCompetenceService;
@@ -12,7 +12,7 @@ public class GetCompetenceController : ControllerBase
         _getCompetenceService = new GetCompetenceService();
     }
 
-    [HttpGet("competence")]
+    [HttpGet]
     public IActionResult GetCompetence()
     {
         try

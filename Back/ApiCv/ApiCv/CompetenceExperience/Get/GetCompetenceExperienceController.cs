@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
 [Route("api/competence-experience")]
-public class GetExperienceCompetenceController : ControllerBase
+public class GetCompetenceExperienceController : ControllerBase
 {
     private readonly GetExperienceCompetenceService _getExperienceCompetenceService;
 
-    public GetExperienceCompetenceController()
+    public GetCompetenceExperienceController()
     {
         _getExperienceCompetenceService = new GetExperienceCompetenceService();
     }

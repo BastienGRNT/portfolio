@@ -13,16 +13,4 @@
         <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="7.3.1" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Divers\Delete\" />
-      <Folder Include="Divers\Get\" />
-      <Folder Include="Divers\Post\" />
-      <Folder Include="Projet\Delete\" />
-      <Folder Include="Projet\Get\" />
-      <Folder Include="Projet\Post\" />
-      <Folder Include="Technologies\Delete\" />
-      <Folder Include="Technologies\Get\" />
-      <Folder Include="Technologies\Post\" />
-    </ItemGroup>
-
 </Project>

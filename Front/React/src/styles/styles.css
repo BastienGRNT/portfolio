@@ -31,6 +31,7 @@
     --font-primary: 'SharpGroteskBold', sans-serif;
     --font-secondary: 'SharpGroteskMedium', sans-serif;
     --font-alt: 'MontserratMedium', sans-serif;
+    --font-size-date: clamp(12px, 1.8vw, 16px);
 
     /* Dimensions et espaces */
     --header-height: clamp(70px, 10vw, 110px);
@@ -60,6 +61,7 @@
 
 
 [data-theme="light"] {
+    --competence-color: #EC361E;
     --button-text-color: #EC361E;
     --grid-color: #EC361E33;
     --home-titre-color: #EC361E;
@@ -76,6 +78,7 @@
 }
 
 [data-theme="dark"] {
+    --competence-color: #ffffff;
     --button-text-color: #ffffff;
     --grid-color: #575757;
     --home-titre-color: #ffffff;

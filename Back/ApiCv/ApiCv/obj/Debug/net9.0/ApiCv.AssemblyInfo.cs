@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiCv")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d7021e1543ea30da1903b3c5ab4b672c29f7912")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+365585201a0eed053d783b887c82d4ee29e8dd0c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiCv")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiCv")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

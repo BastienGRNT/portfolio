@@ -2,5 +2,5 @@
 
 public class GetTechnologiesQuery
 {
-    
+    public static string QueryGetTechnologies = "SELECT * FROM technologies;";
 }

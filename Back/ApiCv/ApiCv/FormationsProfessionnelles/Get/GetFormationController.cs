@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
-[Route("api/")]
+[Route("api/formation")]
 public class GetFormationController : ControllerBase
 {
     private readonly GetFormationService _getFormationService;
@@ -12,7 +12,7 @@ public class GetFormationController : ControllerBase
         _getFormationService = new GetFormationService();
     }
 
-    [HttpGet("formation")]
+    [HttpGet]
     public IActionResult GetFormation()
     {
         try

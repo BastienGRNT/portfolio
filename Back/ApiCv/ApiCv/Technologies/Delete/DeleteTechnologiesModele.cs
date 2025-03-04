@@ -2,5 +2,5 @@
 
 public class DeleteTechnologiesModele
 {
-    
+    public int TechnologieId { get; set; }
 }

@@ -3,7 +3,7 @@
 namespace ApiCv.Competence.Post;
 
 [ApiController]
-[Route("api/")]
+[Route("api/competence")]
 public class PostCompetenceController : ControllerBase
 {
     private readonly PostCompetenceService _postCompetenceService;
@@ -13,7 +13,7 @@ public class PostCompetenceController : ControllerBase
         _postCompetenceService = new PostCompetenceService();
     }
 
-    [HttpPost("competence")]
+    [HttpPost]
     public IActionResult AddCompetence([FromBody] PostCompetenceModele competence)
     {
         if (competence == null)

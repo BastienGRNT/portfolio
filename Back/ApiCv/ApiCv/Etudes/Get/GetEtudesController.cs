@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
-[Route("api/")]
+[Route("api/etudes")]
 public class GetEtudesController : ControllerBase
 {
     private readonly GetEtudesService _getEtudesService;
@@ -12,7 +12,7 @@ public class GetEtudesController : ControllerBase
         _getEtudesService = new GetEtudesService();
     }
 
-    [HttpGet("etudes")]
+    [HttpGet]
     public IActionResult GetEtudes()
     {
         try

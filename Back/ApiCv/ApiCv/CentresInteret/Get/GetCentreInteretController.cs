@@ -4,7 +4,7 @@ namespace ApiCv.CentresInteret.Get;
 
 
 [ApiController]
-[Route("/api")]
+[Route("/api/centre-interet")]
 public class GetCentreInteretController : ControllerBase
 {
     private readonly GetCentreInteretService _getCentreInteretService;
@@ -14,7 +14,7 @@ public class GetCentreInteretController : ControllerBase
         _getCentreInteretService = new GetCentreInteretService();
     }
 
-    [HttpGet("/centre-interet")]
+    [HttpGet]
     public IActionResult GetCentreInteret()
     {
         try

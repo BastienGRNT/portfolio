@@ -2,5 +2,6 @@
 
 public class GetDiversModele
 {
-    
+    public int DiversId { get; set; }
+    public string Description { get; set; }
 }

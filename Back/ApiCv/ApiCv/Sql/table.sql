@@ -16,12 +16,6 @@ CREATE TABLE CompetencesExperiences (
                                         FOREIGN KEY (ExperienceID) REFERENCES Experiences(ExperienceID) ON DELETE CASCADE
 );
 
--- Table des projets
-CREATE TABLE Projets (
-                         ProjetID SERIAL PRIMARY KEY,
-                         Description TEXT NOT NULL
-);
-
 -- Table des compétences techniques (Hard Skills)
 CREATE TABLE HardSkills (
                             HardSkillID SERIAL PRIMARY KEY,

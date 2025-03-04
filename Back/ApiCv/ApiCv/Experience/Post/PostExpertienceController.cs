@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
-[Route("api/")]
+[Route("api/experience")]
 public class PostExperienceController : ControllerBase
 {
     private readonly PostExperienceService _postExperienceService;
@@ -12,7 +12,7 @@ public class PostExperienceController : ControllerBase
         _postExperienceService = new PostExperienceService();
     }
 
-    [HttpPost("experience")]
+    [HttpPost]
     public IActionResult AddExperience([FromBody] PostExperienceModele experience)
     {
         if (experience == null)

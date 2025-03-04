@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
-[Route("api/")]
+[Route("api/etudes")]
 public class PostEtudesController : ControllerBase
 {
     private readonly PostEtudesService _postEtudesService;
@@ -12,7 +12,7 @@ public class PostEtudesController : ControllerBase
         _postEtudesService = new PostEtudesService();
     }
 
-    [HttpPost("etudes")]
+    [HttpPost]
     public IActionResult AddEtudes([FromBody] PostEtudesModele etudes)
     {
         if (etudes == null)

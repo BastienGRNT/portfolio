@@ -3,7 +3,7 @@
 namespace ApiCv.CentresInteret.Post;
 
 [ApiController]
-[Route("api/")]
+[Route("api/centre-interet")]
 public class PostCentreInteretController : ControllerBase
 {
     private readonly PostCentreInteretService _postCentreInteretService;
@@ -13,7 +13,7 @@ public class PostCentreInteretController : ControllerBase
         _postCentreInteretService = new PostCentreInteretService();
     }
 
-    [HttpPost("centre-interet")]
+    [HttpPost]
     public IActionResult AddCentreInteret([FromBody] PostCentreInteretModele centreInteret)
     {
         if (centreInteret == null)
