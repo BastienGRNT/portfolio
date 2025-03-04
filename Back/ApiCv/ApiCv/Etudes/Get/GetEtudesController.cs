@@ -1,0 +1,28 @@
+﻿using ApiCv.Etudes.Get;
+using Microsoft.AspNetCore.Mvc;
+
+[ApiController]
+[Route("api/")]
+public class GetEtudesController : ControllerBase
+{
+    private readonly GetEtudesService _getEtudesService;
+
+    public GetEtudesController()
+    {
+        _getEtudesService = new GetEtudesService();
+    }
+
+    [HttpGet("etudes")]
+    public IActionResult GetEtudes()
+    {
+        try
+        {
+            var result = _getEtudesService.GetEtudes();
+            return Ok(result);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Erreur serveur : {ex.Message}");
+        }
+    }
+}

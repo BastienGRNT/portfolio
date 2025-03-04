@@ -13,7 +13,7 @@ public class PostCentreInteretController : ControllerBase
         _postCentreInteretService = new PostCentreInteretService();
     }
 
-    [HttpPost("CentreInteret")]
+    [HttpPost("centre-interet")]
     public IActionResult AddCentreInteret([FromBody] PostCentreInteretModele centreInteret)
     {
         if (centreInteret == null)

@@ -14,22 +14,14 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="CentresInteret\Delete\" />
-      <Folder Include="Competence\Delete\" />
-      <Folder Include="Competence\Post\" />
       <Folder Include="Divers\Delete\" />
+      <Folder Include="Divers\Get\" />
       <Folder Include="Divers\Post\" />
-      <Folder Include="Etudes\Delete\" />
-      <Folder Include="Etudes\Post\" />
-      <Folder Include="Experience\Delete\" />
-      <Folder Include="Experience\Post\" />
-      <Folder Include="FormationsProfessionnelles\Delete\" />
-      <Folder Include="FormationsProfessionnelles\Post\" />
-      <Folder Include="HardSkills\Delete\" />
-      <Folder Include="HardSkills\Post\" />
       <Folder Include="Projet\Delete\" />
+      <Folder Include="Projet\Get\" />
       <Folder Include="Projet\Post\" />
       <Folder Include="Technologies\Delete\" />
+      <Folder Include="Technologies\Get\" />
       <Folder Include="Technologies\Post\" />
     </ItemGroup>
 
