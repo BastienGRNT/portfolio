@@ -1,0 +1,40 @@
+.CompetencesAdminContainer {
+    padding: 20px;
+}
+
+.AddCompetenceForm input,
+.AddCompetenceForm select {
+    margin-right: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.AddCompetenceForm button {
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+
+.CompetencesTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.CompetencesTable th,
+.CompetencesTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.CompetencesTable th {
+    background-color: #f2f2f2;
+}
+
+.CompetencesTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.CompetencesTable tr:hover {
+    background-color: #f1f1f1;
+}

@@ -1,0 +1,69 @@
+.CentreInteretCard {
+    background-color: var(--card-color);
+    border-radius: var(--border-radius);
+    border: var(--border-width) solid var(--border-color);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: var(--spacing-lg);
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) transparent;
+}
+
+.CentreInteretCard::-webkit-scrollbar {
+    width: 8px;
+}
+
+.CentreInteretCard::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.CentreInteretCard::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    opacity: 0.5;
+}
+
+.CentreInteret {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color var(--transition-fast);
+}
+
+.CentreInteret:last-child {
+    border-bottom: none;
+}
+
+.CentreInteret:hover {
+    background-color: rgba(236, 54, 30, 0.05);
+}
+
+.CentreInteret p {
+    font-family: var(--font-secondary);
+    font-size: calc(var(--nav-font-size) * 0.8);
+    color: var(--text-color);
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .CentreInteretCard {
+        max-height: 70vh;
+    }
+
+    .CentreInteret p {
+        font-size: calc(var(--nav-font-size) * 0.7);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .CentreInteretCard {
+        max-height: 80vh;
+    }
+}

@@ -1,0 +1,48 @@
+.TechnoAdminContainer {
+    padding: 20px;
+}
+
+.AddTechnoForm input {
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.AddTechnoForm button {
+    padding: 5px 10px;
+}
+
+.TechnoList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.TechnoItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.TechnoItem img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.TechnoItem button {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.DeleteButton {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.DeleteButton:hover {
+    background-color: #c0392b;
+}

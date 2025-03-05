@@ -1,0 +1,34 @@
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1.7fr 1.8fr 1fr 1fr;
+    gap: 15px 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    ". TechnoCompetenceCard TechnoCompetenceCard TechnoCompetenceCard TechnoCompetenceCard ."
+    ". experiences experiences HardSkillsCard HardSkillsCard ."
+    ". experiences experiences HardSkillsCard HardSkillsCard ."
+    ". experiences experiences EtudesCard EtudesCard ."
+    ". experiences experiences EtudesCard EtudesCard ."
+    ". FormationCard FormationCard FormationCard FormationCard ."
+    ". DiversCard DiversCard CentreInteretCard CentreInteretCard .";
+}
+
+.TechnoCompetenceCard { grid-area: TechnoCompetenceCard; }
+
+.experiences { grid-area: experiences; }
+
+.HardSkillsCard { grid-area: HardSkillsCard; }
+
+.EtudesCard { grid-area: EtudesCard; }
+
+.FormationCard { grid-area: FormationCard; }
+
+.DiversCard { grid-area: DiversCard; }
+
+.CentreInteretCard { grid-area: CentreInteretCard; }
+
+
+.TitreCV {
+    font-family: var(--font-primary);
+    font-size: 30px;
+}
