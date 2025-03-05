@@ -1,4 +1,4 @@
-﻿namespace ApiCv.CentresInteret.Get;
+﻿namespace ApiCv.CentreInteret.Get;
 
 public class GetCentreInteretQuery
 {

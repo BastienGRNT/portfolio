@@ -2,5 +2,5 @@
 
 public class DeleteExperienceQuery
 {
-    public static string DeleteExperience = "DELETE FROM Experiences WHERE ExperienceID = @experienceid;";
+    public static string DeleteExperience = "DELETE FROM ExperiencePro WHERE ExperienceID = @experienceid;";
 }

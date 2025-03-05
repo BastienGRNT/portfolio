@@ -1,4 +1,4 @@
-﻿namespace ApiCv.HardSkills.Post;
+﻿namespace ApiCv.HardSkill.Post;
 
 public class PostHardSkillsModele
 {

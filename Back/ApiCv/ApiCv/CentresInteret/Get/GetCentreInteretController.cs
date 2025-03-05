@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace ApiCv.CentresInteret.Get;
+namespace ApiCv.CentreInteret.Get;
 
 
 [ApiController]

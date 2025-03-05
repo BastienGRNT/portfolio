@@ -1,6 +1,6 @@
-﻿namespace ApiCv.Etudes.Post;
+﻿namespace ApiCv.Etude.Post;
 
 public class PostEtudesQuery
 {
-    public static string QueryPostEtudes = "INSERT INTO Etudes (Description, Titre, DateDebut, DateFin, Lieu) VALUES (@description, @titre, @datedebut, @datefin, @lieu);";
+    public static string QueryPostEtudes = "INSERT INTO Etude (Description, Titre, DateDebut, DateFin, Lieu) VALUES (@description, @titre, @datedebut, @datefin, @lieu);";
 }

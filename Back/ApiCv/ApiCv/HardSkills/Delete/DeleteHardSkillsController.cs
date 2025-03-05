@@ -1,4 +1,4 @@
-﻿using ApiCv.HardSkills.Delete;
+﻿using ApiCv.HardSkill.Delete;
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]

@@ -1,0 +1,155 @@
+.FormationsAdminContainer {
+    padding: var(--spacing-xl);
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.AdminSectionTitle {
+    font-family: var(--font-primary);
+    color: var(--title-color);
+    font-size: 1.8rem;
+    margin-bottom: var(--spacing-lg);
+    border-bottom: 3px solid var(--border-color);
+    padding-bottom: var(--spacing-sm);
+}
+
+.AddFormationForm {
+    background-color: var(--card-color);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-xl);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.FormGroup {
+    margin-bottom: var(--spacing-md);
+}
+
+.FormLabel {
+    display: block;
+    font-family: var(--font-secondary);
+    color: var(--text-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.AddFormationForm input {
+    width: 100%;
+    padding: var(--spacing-md);
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-family: var(--font-alt);
+    transition: border-color var(--transition-fast);
+    margin-bottom: var(--spacing-md);
+}
+
+.AddFormationForm input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(236, 54, 30, 0.2);
+}
+
+.AddFormationForm button {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-radius: var(--border-radius);
+    font-family: var(--font-secondary);
+    cursor: pointer;
+    transition: background-color var(--transition-medium);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.AddFormationForm button:hover {
+    background-color: var(--competence-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.FormationsTable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: var(--spacing-lg);
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.FormationsTable th, .FormationsTable td {
+    padding: var(--spacing-md);
+    text-align: left;
+    border-bottom: 1px solid var(--grid-color);
+}
+
+.FormationsTable th {
+    background-color: var(--primary-color);
+    color: var(--text-header-color);
+    font-family: var(--font-secondary);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.FormationsTable tr {
+    background-color: var(--card-color);
+    transition: background-color var(--transition-fast);
+}
+
+.FormationsTable tr:nth-child(even) {
+    background-color: rgba(236, 54, 30, 0.05);
+}
+
+.FormationsTable tr:hover {
+    background-color: rgba(236, 54, 30, 0.1);
+}
+
+.FormationsTable td {
+    font-family: var(--font-alt);
+    color: var(--text-color);
+}
+
+.DeleteButton {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition-fast);
+    font-family: var(--font-secondary);
+}
+
+.DeleteButton:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+.ActionColumn {
+    text-align: center;
+}
+
+.EmptyState {
+    text-align: center;
+    padding: var(--spacing-xl);
+    color: var(--text-color);
+    font-family: var(--font-alt);
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .FormationsAdminContainer {
+        padding: var(--spacing-md);
+    }
+
+    .FormationsTable {
+        display: block;
+        overflow-x: auto;
+    }
+}

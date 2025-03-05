@@ -1,4 +1,4 @@
-﻿namespace ApiCv.HardSkills.Delete;
+﻿namespace ApiCv.HardSkill.Delete;
 
 public class DeleteHardSkillsQuery
 {

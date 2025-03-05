@@ -1,4 +1,4 @@
-﻿using ApiCv.HardSkills.Get;
+﻿using ApiCv.HardSkill.Get;
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]

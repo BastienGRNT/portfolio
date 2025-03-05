@@ -1,4 +1,4 @@
-﻿namespace ApiCv.HardSkills.Get;
+﻿namespace ApiCv.HardSkill.Get;
 
 public class GetHardSkillsQuery
 {

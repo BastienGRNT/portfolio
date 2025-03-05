@@ -1,7 +1,7 @@
 ﻿using ApiCv.Sql;
 using Npgsql;
 
-namespace ApiCv.Etudes.Delete;
+namespace ApiCv.Etude.Delete;
 
 public class DeleteEtudesService
 {

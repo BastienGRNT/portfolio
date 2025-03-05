@@ -1,4 +1,4 @@
-﻿using ApiCv.Etudes.Delete;
+﻿using ApiCv.Etude.Delete;
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]

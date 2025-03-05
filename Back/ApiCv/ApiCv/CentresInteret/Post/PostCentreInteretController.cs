@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace ApiCv.CentresInteret.Post;
+namespace ApiCv.CentreInteret.Post;
 
 [ApiController]
 [Route("api/centre-interet")]

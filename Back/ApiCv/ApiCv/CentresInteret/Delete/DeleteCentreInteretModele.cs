@@ -1,4 +1,4 @@
-﻿namespace ApiCv.CentresInteret.Delete;
+﻿namespace ApiCv.CentreInteret.Delete;
 
 public class DeleteCentreInteretModele
 {

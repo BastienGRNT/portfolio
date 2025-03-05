@@ -17,13 +17,13 @@ CREATE TABLE CompetencesExperiences (
 );
 
 -- Table des compétences techniques (Hard Skills)
-CREATE TABLE HardSkills (
+CREATE TABLE HardSkill (
                             HardSkillID SERIAL PRIMARY KEY,
                             Nom VARCHAR(50) NOT NULL
 );
 
 -- Table des études avec gestion dynamique de la date de fin
-CREATE TABLE Etudes (
+CREATE TABLE Etude (
                         EtudeID SERIAL PRIMARY KEY,
                         Description TEXT NOT NULL,
                         Titre VARCHAR(50) NOT NULL,
@@ -39,7 +39,7 @@ CREATE TABLE FormationsProfessionnelles (
 );
 
 -- Table des centres d'intérêt
-CREATE TABLE CentresInteret (
+CREATE TABLE CentreInteret (
                                 CentreInteretID SERIAL PRIMARY KEY,
                                 Nom VARCHAR(50) NOT NULL
 );

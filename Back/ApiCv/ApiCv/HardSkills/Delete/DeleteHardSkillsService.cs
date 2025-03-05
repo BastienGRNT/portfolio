@@ -1,7 +1,7 @@
 ﻿using ApiCv.Sql;
 using Npgsql;
 
-namespace ApiCv.HardSkills.Delete;
+namespace ApiCv.HardSkill.Delete;
 
 public class DeleteHardSkillsService
 {

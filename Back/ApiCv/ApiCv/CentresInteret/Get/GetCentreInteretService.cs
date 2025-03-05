@@ -1,7 +1,7 @@
 ﻿using ApiCv.Sql;
 using Npgsql;
 
-namespace ApiCv.CentresInteret.Get;
+namespace ApiCv.CentreInteret.Get;
 
 public class GetCentreInteretService
 {

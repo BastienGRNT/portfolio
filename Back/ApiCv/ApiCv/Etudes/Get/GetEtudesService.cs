@@ -1,7 +1,7 @@
 ﻿using ApiCv.Sql;
 using Npgsql;
 
-namespace ApiCv.Etudes.Get;
+namespace ApiCv.Etude.Get;
 
 public class GetEtudesService
 {

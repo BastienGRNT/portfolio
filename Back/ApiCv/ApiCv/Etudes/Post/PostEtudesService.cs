@@ -1,7 +1,7 @@
 ﻿using ApiCv.Sql;
 using Npgsql;
 
-namespace ApiCv.Etudes.Post;
+namespace ApiCv.Etude.Post;
 
 public class PostEtudesService
 {

@@ -1,6 +1,6 @@
-﻿namespace ApiCv.Etudes.Get;
+﻿namespace ApiCv.Etude.Get;
 
 public class GetEtudesQuery
 {
-    public static string QueryGetEtudes = "SELECT * FROM Etudes;";
+    public static string QueryGetEtudes = "SELECT * FROM Etude;";
 }

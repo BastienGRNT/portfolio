@@ -1,4 +1,4 @@
-﻿using ApiCv.HardSkills.Post;
+﻿using ApiCv.HardSkill.Post;
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]

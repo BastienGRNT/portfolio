@@ -1,4 +1,4 @@
-﻿namespace ApiCv.CentresInteret.Post;
+﻿namespace ApiCv.CentreInteret.Post;
 
 public class PostCentreInteretQuery
 {

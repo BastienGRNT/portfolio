@@ -2,7 +2,7 @@
 using ApiCv.Sql;
 using Npgsql;
 
-namespace ApiCv.CentresInteret.Delete;
+namespace ApiCv.CentreInteret.Delete;
 
 public class DeleteCentreInteretService
 {
@@ -19,7 +19,7 @@ public class DeleteCentreInteretService
 
             using (var commande = new NpgsqlCommand(query, connection))
             {
-                commande.Parameters.AddWithValue("@centreinteret", id);
+                commande.Parameters.AddWithValue("@centreinteretid", id);
                 commande.ExecuteNonQuery();
             }
 

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ApiCv.CentresInteret.Post;
+namespace ApiCv.CentreInteret.Post;
 
 public class PostCentreInteretModele
 {

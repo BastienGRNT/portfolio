@@ -1,4 +1,4 @@
-﻿namespace ApiCv.Etudes.Post;
+﻿namespace ApiCv.Etude.Post;
 
 public class PostEtudesModele
 {

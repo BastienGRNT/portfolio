@@ -1,4 +1,4 @@
-﻿using ApiCv.Etudes.Get;
+﻿using ApiCv.Etude.Get;
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]

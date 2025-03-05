@@ -1,7 +1,7 @@
 ﻿using ApiCv.Sql;
 using Npgsql;
 
-namespace ApiCv.HardSkills.Get;
+namespace ApiCv.HardSkill.Get;
 
 public class GetHardSkillsService
 {

@@ -1,6 +1,6 @@
-﻿namespace ApiCv.Etudes.Delete;
+﻿namespace ApiCv.Etude.Delete;
 
 public class DeleteEtudesQuery
 {
-    public static string DeleteEtudes = "DELETE FROM Etudes WHERE EtudeID = @etudeid;";
+    public static string DeleteEtudes = "DELETE FROM Etude WHERE EtudeID = @etudeid;";
 }

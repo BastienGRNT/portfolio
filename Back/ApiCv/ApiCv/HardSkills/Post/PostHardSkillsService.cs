@@ -1,7 +1,7 @@
 ﻿using ApiCv.Sql;
 using Npgsql;
 
-namespace ApiCv.HardSkills.Post;
+namespace ApiCv.HardSkill.Post;
 
 public class PostHardSkillsService
 {

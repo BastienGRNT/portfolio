@@ -2,5 +2,5 @@
 
 public class GetExperienceQuery
 {
-    public static string QueryGetExperience = "SELECT * FROM Experiences;";
+    public static string QueryGetExperience = "SELECT * FROM ExperiencePro;";
 }

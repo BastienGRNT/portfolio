@@ -1,0 +1,117 @@
+.DiversAdminContainer {
+    padding: var(--spacing-xl);
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: var(--spacing-lg);
+    transition: all var(--transition-medium);
+    max-width: 1200px;
+}
+
+.AddDiversForm {
+    margin-bottom: var(--spacing-xl);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    align-items: center;
+}
+
+.AddDiversForm input {
+    padding: var(--spacing-md);
+    border: 2px solid var(--primary-color);
+    border-radius: calc(var(--border-radius) / 2);
+    font-family: var(--font-alt);
+    background-color: var(--card-color);
+    color: var(--text-color);
+    transition: all var(--transition-fast);
+    flex: 1;
+    min-width: 250px;
+}
+
+.AddDiversForm input:focus {
+    outline: none;
+    border-color: var(--border-color);
+    box-shadow: 0 0 0 2px rgba(100, 183, 114, 0.3);
+}
+
+.AddDiversForm button {
+    padding: var(--spacing-md) var(--spacing-lg);
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: calc(var(--border-radius) / 2);
+    font-family: var(--font-secondary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    font-weight: bold;
+}
+
+.AddDiversForm button:hover {
+    background-color: var(--shadow-color);
+    transform: translateY(-2px);
+}
+
+.DiversTable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.DiversTable th,
+.DiversTable td {
+    padding: var(--spacing-md);
+    text-align: left;
+    border-bottom: 1px solid var(--grid-color);
+}
+
+.DiversTable th {
+    background-color: var(--primary-color);
+    color: var(--text-header-color);
+    font-family: var(--font-primary);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.DiversTable tr:last-child td {
+    border-bottom: none;
+}
+
+.DiversTable tr:nth-child(even) {
+    background-color: rgba(236, 54, 30, 0.05);
+}
+
+.DiversTable tr:hover {
+    background-color: rgba(236, 54, 30, 0.1);
+}
+
+.DeleteButton {
+    background-color: var(--primary-color);
+    color: var(--text-header-color);
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+    cursor: pointer;
+    border-radius: calc(var(--border-radius) / 3);
+    transition: all var(--transition-fast);
+    font-family: var(--font-alt);
+    font-weight: bold;
+}
+
+.DeleteButton:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+.SectionTitle {
+    font-family: var(--font-primary);
+    color: var(--title-color);
+    margin-bottom: var(--spacing-lg);
+    font-size: var(--title-font-size);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: var(--spacing-sm);
+    display: inline-block;
+}

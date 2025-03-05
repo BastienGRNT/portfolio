@@ -1,0 +1,191 @@
+.ExperienceAdminContainer {
+    padding: var(--spacing-xl);
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: var(--spacing-lg);
+    transition: all var(--transition-medium);
+    max-width: 1200px;
+}
+
+.AddExperienceForm {
+    margin-bottom: var(--spacing-xl);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.FormGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.FormGroup label {
+    margin-bottom: var(--spacing-sm);
+    font-family: var(--font-secondary);
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.AddExperienceForm input,
+.AddExperienceForm textarea,
+.AddExperienceForm select {
+    padding: var(--spacing-md);
+    border: 2px solid var(--primary-color);
+    border-radius: calc(var(--border-radius) / 2);
+    font-family: var(--font-alt);
+    background-color: var(--card-color);
+    color: var(--text-color);
+    transition: all var(--transition-fast);
+}
+
+.AddExperienceForm textarea {
+    grid-column: 1 / -1;
+    min-height: 120px;
+    resize: vertical;
+}
+
+.AddExperienceForm input:focus,
+.AddExperienceForm textarea:focus,
+.AddExperienceForm select:focus {
+    outline: none;
+    border-color: var(--border-color);
+    box-shadow: 0 0 0 2px rgba(100, 183, 114, 0.3);
+}
+
+.FormActions {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: var(--spacing-md);
+}
+
+.AddExperienceForm button {
+    padding: var(--spacing-md) var(--spacing-lg);
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: calc(var(--border-radius) / 2);
+    font-family: var(--font-secondary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    font-weight: bold;
+}
+
+.AddExperienceForm button:hover {
+    background-color: var(--shadow-color);
+    transform: translateY(-2px);
+}
+
+.ExperienceTable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ExperienceTable th,
+.ExperienceTable td {
+    padding: var(--spacing-md);
+    text-align: left;
+    border-bottom: 1px solid var(--grid-color);
+}
+
+.ExperienceTable th {
+    background-color: var(--primary-color);
+    color: var(--text-header-color);
+    font-family: var(--font-primary);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.ExperienceTable tr:last-child td {
+    border-bottom: none;
+}
+
+.ExperienceTable tr:nth-child(even) {
+    background-color: rgba(236, 54, 30, 0.05);
+}
+
+.ExperienceTable tr:hover {
+    background-color: rgba(236, 54, 30, 0.1);
+}
+
+.ActionButtons {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.DeleteButton {
+    background-color: var(--primary-color);
+    color: var(--text-header-color);
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+    cursor: pointer;
+    border-radius: calc(var(--border-radius) / 3);
+    transition: all var(--transition-fast);
+    font-family: var(--font-alt);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.DeleteButton:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+.EditButton {
+    background-color: var(--border-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+    cursor: pointer;
+    border-radius: calc(var(--border-radius) / 3);
+    transition: all var(--transition-fast);
+    font-family: var(--font-alt);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.EditButton:hover {
+    background-color: #4e9359;
+    transform: scale(1.05);
+}
+
+.SectionTitle {
+    font-family: var(--font-primary);
+    color: var(--title-color);
+    margin-bottom: var(--spacing-lg);
+    font-size: var(--title-font-size);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: var(--spacing-sm);
+    display: inline-block;
+}
+
+.DateRange {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-alt);
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.CompanyName {
+    font-weight: bold;
+    font-family: var(--font-secondary);
+    color: var(--primary-color);
+}
+
+.JobTitle {
+    font-weight: normal;
+    font-style: italic;
+}

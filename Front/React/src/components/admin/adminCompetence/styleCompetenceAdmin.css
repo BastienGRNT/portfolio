@@ -1,0 +1,138 @@
+.CompetencesAdminContainer {
+    padding: var(--spacing-xl);
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: var(--spacing-lg);
+    transition: all var(--transition-medium);
+    max-width: 1200px;
+}
+
+.AddCompetenceForm {
+    margin-bottom: var(--spacing-xl);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    align-items: center;
+}
+
+.AddCompetenceForm input,
+.AddCompetenceForm select {
+    padding: var(--spacing-md);
+    border: 2px solid var(--primary-color);
+    border-radius: calc(var(--border-radius) / 2);
+    font-family: var(--font-alt);
+    background-color: var(--card-color);
+    color: var(--text-color);
+    transition: all var(--transition-fast);
+    flex: 1;
+    min-width: 200px;
+}
+
+.AddCompetenceForm select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23EC361E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem center;
+    background-size: 1em;
+    padding-right: 2.5rem;
+}
+
+.AddCompetenceForm input:focus,
+.AddCompetenceForm select:focus {
+    outline: none;
+    border-color: var(--border-color);
+    box-shadow: 0 0 0 2px rgba(100, 183, 114, 0.3);
+}
+
+.AddCompetenceForm button {
+    padding: var(--spacing-md) var(--spacing-lg);
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: calc(var(--border-radius) / 2);
+    font-family: var(--font-secondary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    font-weight: bold;
+}
+
+.AddCompetenceForm button:hover {
+    background-color: var(--shadow-color);
+    transform: translateY(-2px);
+}
+
+.CompetencesTable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.CompetencesTable th,
+.CompetencesTable td {
+    padding: var(--spacing-md);
+    text-align: left;
+    border-bottom: 1px solid var(--grid-color);
+}
+
+.CompetencesTable th {
+    background-color: var(--primary-color);
+    color: var(--text-header-color);
+    font-family: var(--font-primary);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.CompetencesTable tr:last-child td {
+    border-bottom: none;
+}
+
+.CompetencesTable tr:nth-child(even) {
+    background-color: rgba(236, 54, 30, 0.05);
+}
+
+.CompetencesTable tr:hover {
+    background-color: rgba(236, 54, 30, 0.1);
+}
+
+.DeleteButton {
+    background-color: var(--primary-color);
+    color: var(--text-header-color);
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+    cursor: pointer;
+    border-radius: calc(var(--border-radius) / 3);
+    transition: all var(--transition-fast);
+    font-family: var(--font-alt);
+    font-weight: bold;
+}
+
+.DeleteButton:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+.BadgeLevel {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: var(--text-header-color);
+}
+
+.SectionTitle {
+    font-family: var(--font-primary);
+    color: var(--title-color);
+    margin-bottom: var(--spacing-lg);
+    font-size: var(--title-font-size);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: var(--spacing-sm);
+    display: inline-block;
+}

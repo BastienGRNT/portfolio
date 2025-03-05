@@ -1,7 +1,7 @@
 ﻿using ApiCv.Sql;
 using Npgsql;
 
-namespace ApiCv.CentresInteret.Post;
+namespace ApiCv.CentreInteret.Post;
 
 public class PostCentreInteretService
 {

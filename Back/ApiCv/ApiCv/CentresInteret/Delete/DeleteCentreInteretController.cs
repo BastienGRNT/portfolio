@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace ApiCv.CentresInteret.Delete;
+namespace ApiCv.CentreInteret.Delete;
 
 [ApiController]
 [Route("api/")]

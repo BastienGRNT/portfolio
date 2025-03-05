@@ -1,4 +1,4 @@
-﻿namespace ApiCv.Etudes.Get;
+﻿namespace ApiCv.Etude.Get;
 
 public class GetEtudesModele
 {
