@@ -20,7 +20,9 @@ export default function Home() {
             </div>
             <div className="Main2">
                 <button className="Bouton" type="button" onClick={() => navigate("/me")}>En savoir plus sur moi</button>
-                <a target="_blank" rel="noreferrer"><img src="/Logo/moi.svg" alt="LinkedIn"/></a>
+                <a href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noreferrer">
+                    <img src="/Logo/moi.svg" alt="LinkedIn"/>
+                </a>
                 <button className="Bouton" type="button" onClick={() => navigate("/project")}>Découvrir mes projets</button>
             </div>
         </div>

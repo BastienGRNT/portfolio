@@ -1,0 +1,65 @@
+.HardSkillsCard {
+    background-color: var(--card-color);
+    border-radius: var(--border-radius);
+    border: var(--border-width) solid var(--border-color);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-height: var(--card-height);
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    overflow-y: auto;
+    padding: var(--spacing-lg);
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) transparent;
+}
+
+.HardSkillsCard::-webkit-scrollbar {
+    width: 8px;
+}
+
+.HardSkillsCard::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.HardSkillsCard::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    opacity: 0.5;
+}
+
+.Hd {
+    background-color: var(--grid-color);
+    color: var(--competence-color);
+    font-family: var(--font-secondary);
+    padding: calc(var(--spacing-sm) / 2) var(--spacing-sm);
+    border-radius: calc(var(--border-radius) / 2);
+    font-size: calc(var(--nav-font-size) * 0.7);
+    text-align: center;
+    transition: background-color var(--transition-fast);
+    margin: 0;
+    margin-bottom: var(--spacing-sm);
+    width: 100%;
+}
+
+.Hd:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .HardSkillsCard {
+        max-height: 70vh;
+    }
+
+    .Hd {
+        font-size: calc(var(--nav-font-size) * 0.6);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .HardSkillsCard {
+        max-height: 80vh;
+    }
+}

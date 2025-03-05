@@ -1,0 +1,103 @@
+.EtudesCard {
+    background-color: var(--card-color);
+    border-radius: var(--border-radius);
+    border: var(--border-width) solid var(--border-color);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-height: var(--card-height);
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+}
+
+.EtudesCard {
+    overflow-y: auto;
+    padding: var(--spacing-lg);
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) transparent;
+}
+
+.EtudesCard::-webkit-scrollbar {
+    width: 8px;
+}
+
+.EtudesCard::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.EtudesCard::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    opacity: 0.5;
+}
+
+.EtudeCard {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color var(--transition-fast);
+}
+
+.EtudeCard:last-child {
+    border-bottom: none;
+}
+
+.EtudeCard:hover {
+    background-color: rgba(236, 54, 30, 0.05);
+}
+
+.DescEtude {
+    display: flex;
+    align-items: center;
+}
+
+.EtudeTitre {
+    font-family: var(--font-primary);
+    font-size: var(--title-font-size);
+    color: var(--title-color);
+    margin: 0;
+    flex-grow: 1;
+}
+
+.EtudeInfo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.dateD, .ExpDateF, .DateFinNull {
+    font-family: var(--font-alt);
+    color: var(--main2-color);
+    font-size: var(--font-size-date);
+    opacity: 0.7;
+}
+
+.Lieux {
+    font-family: var(--font-secondary);
+    color: var(--text-color);
+    font-size: calc(var(--nav-font-size) * 0.8);
+    margin: 0;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .EtudesCard {
+        max-height: 70vh;
+    }
+
+    .EtudeTitre {
+        font-size: calc(var(--title-font-size) * 0.9);
+    }
+
+    .Lieux {
+        font-size: calc(var(--nav-font-size) * 0.7);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .EtudesCard {
+        max-height: 80vh;
+    }
+}

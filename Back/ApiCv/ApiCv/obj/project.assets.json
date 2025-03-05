@@ -374,19 +374,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\BASTIEN\\.nuget\\packages\\": {}
+    "C:\\Users\\greno\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BASTIEN\\Code\\CodeFiles\\Portfolio\\Back\\ApiCv\\ApiCv\\ApiCv.csproj",
+      "projectUniqueName": "C:\\Users\\greno\\Code\\CodeFiles\\portfolio\\Back\\ApiCv\\ApiCv\\ApiCv.csproj",
       "projectName": "ApiCv",
-      "projectPath": "C:\\Users\\BASTIEN\\Code\\CodeFiles\\Portfolio\\Back\\ApiCv\\ApiCv\\ApiCv.csproj",
-      "packagesPath": "C:\\Users\\BASTIEN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BASTIEN\\Code\\CodeFiles\\Portfolio\\Back\\ApiCv\\ApiCv\\obj\\",
+      "projectPath": "C:\\Users\\greno\\Code\\CodeFiles\\portfolio\\Back\\ApiCv\\ApiCv\\ApiCv.csproj",
+      "packagesPath": "C:\\Users\\greno\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\greno\\Code\\CodeFiles\\portfolio\\Back\\ApiCv\\ApiCv\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\BASTIEN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\greno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -452,7 +457,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\BASTIEN\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
