@@ -1,0 +1,118 @@
+.LangageAdminContainer {
+    padding: var(--spacing-xl);
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.LangageAdminContainer h2 {
+    font-family: var(--font-primary);
+    color: var(--title-color);
+    font-size: 1.8rem;
+    margin-bottom: var(--spacing-lg);
+    border-bottom: 3px solid var(--border-color);
+    padding-bottom: var(--spacing-sm);
+}
+
+.AddLangageForm {
+    background-color: var(--card-color);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-xl);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+    .AddLangageForm {
+        grid-template-columns: 1fr;
+    }
+}
+
+.AddLangageForm input {
+    width: 100%;
+    padding: var(--spacing-md);
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-family: var(--font-alt);
+    transition: border-color var(--transition-fast);
+}
+
+.AddLangageForm input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(236, 54, 30, 0.2);
+}
+
+.AddLangageForm button {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-radius: var(--border-radius);
+    font-family: var(--font-secondary);
+    cursor: pointer;
+    transition: background-color var(--transition-medium);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    height: fit-content;
+    align-self: end;
+}
+
+.AddLangageForm button:hover {
+    background-color: var(--competence-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.LangageList {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.LangageItem {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-md);
+    background-color: var(--card-color);
+    border-radius: var(--border-radius);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.LangageItem:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: rgba(236, 54, 30, 0.05);
+}
+
+.LangageImage {
+    width: 40px;
+    height: 40px;
+    margin-right: var(--spacing-md);
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--border-color);
+    padding: 3px;
+    background-color: white;
+}
+
+.LangageItem span {
+    font-family: var(--font-secondary);
+    color: var(--text-color);
+    flex: 1;
+    font-size: 1.1rem;
+}
+
+.LangageItem .DeleteButton {
+    margin-left: auto;
+}
