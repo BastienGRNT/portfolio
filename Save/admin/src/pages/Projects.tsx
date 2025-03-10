@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../styles.css";
 
-const API_URL = "http://localhost:5245/api/";
+const API_URL = "http://51.83.75.252:5240/api/";
 
 interface Project {
     idProject: number;

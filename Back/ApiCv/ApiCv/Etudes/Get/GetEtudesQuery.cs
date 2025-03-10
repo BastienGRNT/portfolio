@@ -2,5 +2,5 @@
 
 public class GetEtudesQuery
 {
-    public static string QueryGetEtudes = "SELECT * FROM Etude;";
+    public static string QueryGetEtudes = "SELECT * FROM etudes;";
 }

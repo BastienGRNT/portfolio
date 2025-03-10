@@ -2,5 +2,5 @@
 
 public class PostEtudesQuery
 {
-    public static string QueryPostEtudes = "INSERT INTO Etude (Description, Titre, DateDebut, DateFin, Lieu) VALUES (@description, @titre, @datedebut, @datefin, @lieu);";
+    public static string QueryPostEtudes = "INSERT INTO etudes (Description, Titre, DateDebut, DateFin, Lieu) VALUES (@description, @titre, @datedebut, @datefin, @lieu);";
 }

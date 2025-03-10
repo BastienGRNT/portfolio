@@ -1,4 +1,3 @@
--- Table des expériences professionnelles
 CREATE TABLE Experiences (
                              ExperienceID SERIAL PRIMARY KEY,
                              Titre VARCHAR(50) NOT NULL,
@@ -8,7 +7,6 @@ CREATE TABLE Experiences (
                              DateFin DATE DEFAULT NULL -- NULL si l'expérience est en cours
 );
 
--- Table des compétences liées aux expériences avec DELETE ON CASCADE
 CREATE TABLE CompetencesExperiences (
                                         CompetenceExperienceID SERIAL PRIMARY KEY,
                                         Competence VARCHAR(50) NOT NULL,
@@ -16,41 +14,35 @@ CREATE TABLE CompetencesExperiences (
                                         FOREIGN KEY (ExperienceID) REFERENCES Experiences(ExperienceID) ON DELETE CASCADE
 );
 
--- Table des compétences techniques (Hard Skills)
 CREATE TABLE HardSkill (
                             HardSkillID SERIAL PRIMARY KEY,
                             Nom VARCHAR(50) NOT NULL
 );
 
--- Table des études avec gestion dynamique de la date de fin
 CREATE TABLE Etude (
                         EtudeID SERIAL PRIMARY KEY,
                         Description TEXT NOT NULL,
                         Titre VARCHAR(50) NOT NULL,
                         DateDebut DATE NOT NULL,
-                        DateFin DATE DEFAULT NULL, -- NULL si les études sont en cours
+                        DateFin DATE DEFAULT NULL,
                         Lieu VARCHAR(50) NOT NULL
 );
 
--- Table des formations professionnelles
 CREATE TABLE FormationsProfessionnelles (
                                             FormationID SERIAL PRIMARY KEY,
                                             Nom VARCHAR(100) NOT NULL
 );
 
--- Table des centres d'intérêt
 CREATE TABLE CentreInteret (
                                 CentreInteretID SERIAL PRIMARY KEY,
                                 Nom VARCHAR(50) NOT NULL
 );
 
--- Table divers (pour des informations supplémentaires)
 CREATE TABLE Divers (
                         DiversID SERIAL PRIMARY KEY,
                         Description VARCHAR(50)
 );
 
--- Table des technologies utilisées
 CREATE TABLE Technologies (
                               TechnologieID SERIAL PRIMARY KEY,
                               Nom VARCHAR(50) NOT NULL,
@@ -58,7 +50,13 @@ CREATE TABLE Technologies (
 );
 
 CREATE TABLE Competence (
-                            Id SERIAL PRIMARY KEY,       -- Identifiant unique (auto-incrémenté)
-                            Nom VARCHAR(50) NOT NULL,    -- Nom de la compétence
-                            Description TEXT             -- Description de la compétence (facultatif)
+                            Id SERIAL PRIMARY KEY,
+                            Nom VARCHAR(50) NOT NULL,
+                            Description TEXT
+);
+
+CREATE TABLE Langages (
+                              LangagesID SERIAL PRIMARY KEY,
+                              Nom VARCHAR(50) NOT NULL,
+                              IconePath TEXT NOT NULL
 );

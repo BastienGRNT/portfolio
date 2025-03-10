@@ -2,5 +2,5 @@
 
 public class DeleteEtudesQuery
 {
-    public static string DeleteEtudes = "DELETE FROM Etude WHERE EtudeID = @etudeid;";
+    public static string DeleteEtudes = "DELETE FROM etudes WHERE EtudeID = @etudeid;";
 }
