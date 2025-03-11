@@ -1,0 +1,18 @@
+.Link {
+    text-align: left;
+    flex: 1;
+    display: flex;
+    padding: var(--link-pading);
+    gap: var(--link-gap);
+}
+
+
+.link-porfolio, .link-cv {
+    font-family: var(--font-secondary), sans-serif;
+    font-size: var(--link-font-size);
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+
+
