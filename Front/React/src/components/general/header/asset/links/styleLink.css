@@ -1,0 +1,18 @@
+.HeaderLink {
+    text-align: left;
+    flex: 1;
+    display: flex;
+    padding: clamp(5px, 1vw, 10px);
+    gap: clamp(12px, 2vw, 20px);
+}
+
+
+.header-link-porfolio, .header-link-cv {
+    text-decoration: none;
+    font-family: var(--font-secondary), sans-serif;
+    color: var(--link-color-header);
+    font-size: clamp(10px, 4vw, 30px);
+}
+
+
+

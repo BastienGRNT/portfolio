@@ -1,0 +1,16 @@
+.HeaderTitle {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: clamp(10px, 2vw, 20px);
+}
+
+.header-link-title {
+    white-space: nowrap;
+    text-decoration: none;
+    font-family: var(--font-primary), sans-serif;
+    color: var(--title-color-header);
+    font-size: clamp(30px, 2vw, 40px);
+}

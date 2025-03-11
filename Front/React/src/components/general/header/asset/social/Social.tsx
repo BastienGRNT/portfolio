@@ -1,17 +1,18 @@
 import React from "react";
 import "./styleSocial.css";
+import {Github, Linkedin, UserProfile} from "../Svg/Svg";
 
 export default function Social() {
     return (
-        <div className="Social">
+        <div className="HeaderIcon">
             <a href="https://www.linkedin.com/in/bastiengrnt/" target="_blank" rel="noreferrer">
-                <img src="/Logo/linkedin.svg" alt="LinkedIn"/>
+                <Linkedin/>
             </a>
             <a href="https://github.com/BastienGRNT" target="_blank" rel="noreferrer">
-                <img src="/Logo/github.svg" alt="Github"/>
+                <Github/>
             </a>
             <a href="mailto:bastien.grenot@gmail.com" target="_blank" rel="noreferrer">
-                <img src="/Logo/gmail.svg" alt="Email"/>
+                <UserProfile/>
             </a>
         </div>
     )

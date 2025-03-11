@@ -1,14 +1,8 @@
-.Social {
+.HeaderIcon {
     text-align: right;
     flex: 1;
     display: flex;
     justify-content: flex-end;
     gap: clamp(8px, 1.5vw, 15px);
     padding: clamp(8px, 1.5vw, 15px);
-}
-
-.Social img {
-    width: var(--social-icons-size);
-    height: var(--social-icons-size);
-    background-color: transparent;
 }

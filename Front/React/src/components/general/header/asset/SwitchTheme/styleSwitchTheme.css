@@ -22,7 +22,7 @@
 }
 
 .toggle-checkbox:checked ~ .toggle-slot {
-    background-color: #374151;
+    background-color: var(--header-switch-color-background);
 }
 
 .toggle-button {
@@ -31,8 +31,8 @@
     height: 3em;
     width: 3em;
     border-radius: 50%;
-    background-color: #ffeccf;
-    box-shadow: inset 0px 0px 0px 0.75em #ffbb52;
+    background-color: var(--header-switch-color-cicle);
+    box-shadow: inset 0px 0px 0px 0.75em var(--header-switch-color-cicleshadow);
     transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26,2,.46,.71);
 }
 

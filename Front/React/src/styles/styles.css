@@ -28,22 +28,8 @@
     --font-secondary: 'SharpGroteskMedium', sans-serif;
     --font-alt: 'MontserratMedium', sans-serif;
 
-    /* --------- LINK --------- */
-        /* GAP --------- */
-        --link-gap: clamp(5px, 1vw, 10px);
-        /* PADDING --------- */
-        --link-pading: clamp(10px, 2vw, 20px);
-        /* FONT SIZE --------- */
-        --link-font-size: clamp(10px, 4vw, 30px);
-
-    /* --------- SOCIAL --------- */
-        /* GAP --------- */
-        --social-gap: clamp(8px, 1.5vw, 15px);
-        /* PADDING --------- */
-        --social-pading: clamp(8px, 1.5vw, 15px);
-        /* SIZE --------- */
-        --social-icons-size: clamp(18px, 10vw, 28px);
-
+    /* --------- /// MEDIA \\\ --------- */
+    --header-responsive-media-width : 951px;
 
     --header-height : clamp(70px, 10vw, 110px);
     --title-font-size: clamp(24px, 4vw, 35px);
@@ -70,7 +56,15 @@
 
 [data-theme="light"] {
     /* --------- LINK --------- */
-        --link-color: #FCF9CE;
+        --link-color-header: #FCF9CE;
+    /* --------- TITLE --------- */
+        --title-color-header: #FCF9CE;
+    /* --------- SOCIAL --------- */
+        --header-socialIcon-color: #FCF9CE;
+    /* --------- SWITCHTHEME --------- */
+        --header-switch-color-background: #ffffff;
+        --header-switch-color-cicle : #ffffff;
+        --header-switch-color-cicleshadow: #FCF9CE;
 
 
     --competence-color: #EC361E;
@@ -78,10 +72,8 @@
     --grid-color: #EC361E33;
     --home-titre-color: #EC361E;
     --main2-color: #000000;
-
     --border-color: #64B772;
     --card-color: #FCF9CE;
-    --title-color: #EC361E;
     --text-color: #000000;
     --primary-color: #EC361E;
     --secondary-color: #FCF9CE;
@@ -90,7 +82,16 @@
 }
 
 [data-theme="dark"] {
-    --link-color: #FCF9CE;
+    /* --------- LINK --------- */
+        --link-color-header: #ffffff;
+    /* --------- TITLE --------- */
+        --title-color-header: #ffffff;
+    /* --------- SOCIAL --------- */
+        --header-socialIcon-color: #ffffff;
+    /* --------- SWITCHTHEME --------- */
+        --header-switch-color-background: #000000;
+        --header-switch-color-cicle : #000000;
+        --header-switch-color-cicleshadow: #ffffff;
 
     --competence-color: #ffffff;
     --button-text-color: #ffffff;

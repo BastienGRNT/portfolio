@@ -1,0 +1,8 @@
+.GithubSvg,
+.LinkedinSvg,
+.UserProfileSvg,
+.MenuBurgerSvg {
+    width: clamp(20px, 10vw, 38px);
+    height: clamp(20px, 10vw, 38px);
+    color: var(--header-socialIcon-color);
+}
