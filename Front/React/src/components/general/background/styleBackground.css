@@ -5,7 +5,7 @@
             linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
     background-size: 125px 125px;
     background-position: 0 0;
-    background-attachment: fixed;  /* Fixe la grille lors du défilement */
+    background-attachment: fixed;
     background-repeat: repeat;
     width: 100%;
     min-height: 100vh;

@@ -19,7 +19,7 @@ export default function Accueil() {
                 </div>
             </div>
             <div className="Main2">
-                <button className="Bouton" type="button" onClick={() => navigate("/me")}>En savoir plus sur moi</button>
+                <button className="Bouton" type="button" onClick={() => navigate("/cv")}>En savoir plus sur moi</button>
                 <a href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noreferrer">
                     <img src="/Logo/moi.svg" alt="LinkedIn"/>
                 </a>

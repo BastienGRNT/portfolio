@@ -2,7 +2,7 @@ import Links from "./asset/links/Links"
 import Social from "./asset/social/Social";
 import Titles from "./asset/title/Title";
 import SwitchTheme from "./asset/SwitchTheme/SwitchTheme";
-import {MenuBurger} from "./test";
+import {MenuBurger} from "./asset/menuburger/MenuBurger";
 import "./styleHeader.css";
 
 export default function Header() {

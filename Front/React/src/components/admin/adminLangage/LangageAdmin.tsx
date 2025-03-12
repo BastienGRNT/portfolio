@@ -14,12 +14,12 @@ interface Langages {
 
 interface NewLangage {
     nom : string;
-    iconePath : string;
+    iconPath : string;
 }
 
 export default function LangageAdmin() {
 
-    const [newLangage, setNewLangage] = useState<NewLangage>({ nom : "", iconePath : "" });
+    const [newLangage, setNewLangage] = useState<NewLangage>({ nom : "", iconPath : "" });
     const [langages, setLangage] = useState<Langages[]>([]);
 
     useEffect(() => {
@@ -37,11 +37,11 @@ export default function LangageAdmin() {
     }
 
     const postTechno = async () => {
-        if (newLangage.nom && newLangage.iconePath) {
+        if (newLangage.nom && newLangage.iconPath) {
             try {
                 const reponse = await axios.post(API, newLangage)
                 setLangage([...langages, reponse.data]);
-                setNewLangage({nom : "", iconePath : "" });
+                setNewLangage({nom : "", iconPath : "" });
             } catch (error) {
                 console.log(error);
             }
@@ -52,7 +52,7 @@ export default function LangageAdmin() {
         setNewLangage({ ...newLangage, [e.target.name]: e.target.value });
     }
     const handleImageChange = (value: string) => {
-        setNewLangage({ ...newLangage, iconePath: value });
+        setNewLangage({ ...newLangage, iconPath: value });
     };
 
     return (
@@ -66,7 +66,7 @@ export default function LangageAdmin() {
                     value={newLangage.nom}
                     onChange={handleChange}
                 />
-                <ImageSelect value={newLangage.iconePath} onChange={handleImageChange} />
+                <ImageSelect value={newLangage.iconPath} onChange={handleImageChange} />
                 <button onClick={postTechno}>Ajouter</button>
             </div>
 

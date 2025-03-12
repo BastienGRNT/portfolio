@@ -28,7 +28,11 @@ export default function Divers() {
 
     return (
         <div className="DiversCard">
-            <p className="TitreCV">Divers</p>
+            <div className="CvTitreDiv">
+                <p className="CvTitre">
+                    Divers
+                </p>
+            </div>
             {divers.map((diver) => (
                 <div className="DiversDiv" key={diver.diversId}>
                     <p className="Divers">{diver.description}</p>

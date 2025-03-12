@@ -34,7 +34,7 @@
     border: 2px solid var(--primary-color);
     border-radius: calc(var(--border-radius) / 2);
     font-family: var(--font-alt);
-    background-color: var(--card-color);
+    background-color: var(--cv-card-color);
     color: var(--text-color);
     transition: all var(--transition-fast);
 }

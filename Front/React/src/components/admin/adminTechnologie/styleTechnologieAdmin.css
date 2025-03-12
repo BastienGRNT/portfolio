@@ -16,7 +16,7 @@
 }
 
 .AddTechnoForm {
-    background-color: var(--card-color);
+    background-color: var(--cv-card-color);
     padding: var(--spacing-lg);
     border-radius: var(--border-radius);
     margin-bottom: var(--spacing-xl);
@@ -94,7 +94,7 @@
     display: flex;
     align-items: center;
     padding: var(--spacing-md);
-    background-color: var(--card-color);
+    background-color: var(--cv-card-color);
     border-radius: var(--border-radius);
     transition: transform var(--transition-fast), box-shadow var(--transition-fast);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

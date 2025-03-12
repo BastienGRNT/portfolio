@@ -1,9 +1,9 @@
 import React, {useState, useEffect, useRef, JSX} from 'react';
-import { MenuBurgerSvg } from "./asset/Svg/Svg";
-import Links from "./asset/links/Links";
-import Social from "./asset/social/Social";
-import SwitchTheme from "./asset/SwitchTheme/SwitchTheme";
-import "./test.css";
+import { MenuBurgerSvg } from "../svg/Svg";
+import Links from "../links/Links";
+import Social from "../social/Social";
+import SwitchTheme from "../SwitchTheme/SwitchTheme";
+import "./styleMenuBurger.css";
 
 export function MenuBurger(): JSX.Element {
     const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -52,9 +52,22 @@ export function MenuBurger(): JSX.Element {
                 aria-hidden={!isOpen}
             >
                 <div className="menu-items">
-                    <Links />
-                    <Social />
-                    <SwitchTheme />
+                    <div className="menu-haut">
+                        <button
+                            className="burger-icon"
+                            onClick={toggleMenu}
+                            aria-label="Fermer le menu"
+                        >
+                            <MenuBurgerSvg/>
+                        </button>
+                        <SwitchTheme />
+                    </div>
+                    <div className="menu-centre">
+                        <Links />
+                    </div>
+                    <div className="menu-bas">
+                        <Social />
+                    </div>
                 </div>
             </div>
         </div>

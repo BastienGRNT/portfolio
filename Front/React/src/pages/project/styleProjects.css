@@ -9,7 +9,6 @@
     }
 }
 
-/* Animation pour les techs */
 @keyframes popIn {
     0% {
         transform: scale(0);
@@ -24,7 +23,6 @@
     }
 }
 
-/* Animation du conteneur lors du chargement */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -59,7 +57,7 @@
     justify-content: center;
     box-sizing: border-box;
     padding: 0.35rem;
-    background-color: var(--card-color);
+    background-color: var(--cv-card-color);
     box-shadow: 60px 60px 0px var(--shadow-color-alt);
     border-radius: var(--border-radius);
     border: var(--border-width) solid var(--shadow-color-alt);
@@ -96,7 +94,7 @@
 .Title {
     font-family: 'SharpGroteskBold', sans-serif;
     font-size: clamp(1.5rem, 1.7vw, 1.75rem);
-    color: var(--title-color);
+    color: var(--title-color-projet);
     margin: 0;
     word-wrap: break-word;
     line-height: 1.2;

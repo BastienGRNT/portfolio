@@ -4,7 +4,7 @@
     gap: 15px 15px;
     grid-auto-flow: row;
     grid-template-areas:
-    ". TechnoCompetenceCard TechnoCompetenceCard TechnoCompetenceCard TechnoCompetenceCard ."
+    ". LangageCompetenceCard LangageCompetenceCard TechnoCompetenceCard TechnoCompetenceCard ."
     ". experiences experiences HardSkillsCard HardSkillsCard ."
     ". experiences experiences HardSkillsCard HardSkillsCard ."
     ". experiences experiences EtudesCard EtudesCard ."
@@ -12,6 +12,8 @@
     ". FormationCard FormationCard FormationCard FormationCard ."
     ". DiversCard DiversCard CentreInteretCard CentreInteretCard .";
 }
+
+.LangageCompetenceCard {grid-area: LangageCompetenceCard}
 
 .TechnoCompetenceCard { grid-area: TechnoCompetenceCard; }
 
@@ -28,8 +30,15 @@
 .CentreInteretCard { grid-area: CentreInteretCard; }
 
 
-.TitreCV {
-    font-family: var(--font-primary);
+.LangageCompetenceCard, .TechnoCompetenceCard, .experiences,
+.HardSkillsCard, .EtudesCard, .FormationCard, .DiversCard, .CentreInteretCard {
+
+}
+
+
+
+.CvTitre {
+    font-family: var(--font-primary), sans-serif;
     font-size: 30px;
 }
 

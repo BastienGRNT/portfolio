@@ -29,7 +29,11 @@ export default function Technos() {
 
     return(
         <div className="TechnoCompetenceCard">
-            <p className="TitreCV"> Technologies</p>
+            <div className="CvTitreDiv">
+                <p className="CvTitre">
+                    Techno
+                </p>
+            </div>
             {technos.map(techno => (
                 <div className="TechnoCompetence" key={techno.technologieId}>
                     <img src={techno.iconePath} alt={techno.nom} />

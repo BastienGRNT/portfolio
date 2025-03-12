@@ -65,6 +65,8 @@
         --header-switch-color-background: #ffffff;
         --header-switch-color-cicle : #ffffff;
         --header-switch-color-cicleshadow: #FCF9CE;
+    /* --------- TITLE Project ------- */
+        --title-color-projet: #EC361E;
 
 
     --competence-color: #EC361E;
@@ -73,7 +75,7 @@
     --home-titre-color: #EC361E;
     --main2-color: #000000;
     --border-color: #64B772;
-    --card-color: #FCF9CE;
+    --cv-card-color: #FCF9CE;
     --text-color: #000000;
     --primary-color: #EC361E;
     --secondary-color: #FCF9CE;
@@ -92,6 +94,8 @@
         --header-switch-color-background: #000000;
         --header-switch-color-cicle : #000000;
         --header-switch-color-cicleshadow: #ffffff;
+    /* --------- TITLE Project ------- */
+        --title-color-projet: #ffffff;
 
     --competence-color: #ffffff;
     --button-text-color: #ffffff;
@@ -100,7 +104,7 @@
     --main2-color: #ffffff;
     --text-header-color: #ffffff;
     --border-color: #ffffff;
-    --card-color: #282828;
+    --cv-card-color: #282828;
     --title-color: #ffffff;
     --text-color: #ffffff;
     --primary-color: #575757;

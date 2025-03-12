@@ -39,7 +39,7 @@
     word-wrap: break-word;
     margin-bottom: 0px;
     width: fit-content;
-    padding-right: 15px; /* Ajoute 5px à gauche et à droite */
+    padding-right: 15px;
 }
 
 .Home2 {
@@ -96,57 +96,6 @@
     text-overflow: ellipsis;
 }
 
-
-@media screen and (max-width: 768px) {
-    .Main2 {
-        flex-direction: column;
-    }
-
-    .Main1 {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .Main2 img {
-        width: 100%;
-        min-width: auto;
-    }
-
-    .Bouton {
-        width: 100%;
-        text-align: center;
-    }
-
-    .Projet {
-        text-align: left;
-        word-spacing: normal;
-    }
-}
-
-
-@media print {
-    .Main {
-        width: 100%;
-        max-width: none;
-    }
-
-    .Bouton {
-        box-shadow: none;
-        border: 1px solid #000;
-        color: #000;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    .Projet {
-        background-color: transparent; /* Applique le fond même en mode sombre */
-    }
-
-    .Bouton {
-        background-color: var(--secondary-color);
-    }
-}
 
 
 

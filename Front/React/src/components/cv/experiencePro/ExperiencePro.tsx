@@ -36,7 +36,11 @@ export default function ExperiencePro(){
 
     return (
         <div className="experiences">
-            <p className="TitreCV">Experiences Professionnelles</p>
+            <div className="CvTitreDiv">
+                <p className="CvTitre">
+                    Experience Profesionnel
+                </p>
+            </div>
             <div className="experiences-wrapper">
                 {experiences.map((experience) => (
                     <div key={experience.experienceId} className="ExpCard">

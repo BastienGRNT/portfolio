@@ -33,7 +33,11 @@ export default function Etudes() {
 
     return (
         <div className="EtudesCard">
-            <p className="TitreCV">Etudes</p>
+            <div className="CvTitreDiv">
+                <p className="CvTitre">
+                    Etudes
+                </p>
+            </div>
             {etudes.map((etude) => (
                 <div className="EtudeCard" key={etude.etudeId}>
                     <div className="DescEtude">

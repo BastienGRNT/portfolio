@@ -29,7 +29,11 @@ export default function HardSkills() {
 
     return (
         <div className="HardSkillsCard">
-            <p className="TitreCV">Hard Skills</p>
+            <div className="CvTitreDiv">
+                <p className="CvTitre">
+                    HardSkills
+                </p>
+            </div>
             {hardSkills.map(hardSkill => (
                     <p className="Hd" key={hardSkill.hardSkillId}>{hardSkill.nom}</p>
                 ))}

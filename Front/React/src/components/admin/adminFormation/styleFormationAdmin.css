@@ -16,7 +16,7 @@
 }
 
 .AddFormationForm {
-    background-color: var(--card-color);
+    background-color: var(--cv-card-color);
     padding: var(--spacing-lg);
     border-radius: var(--border-radius);
     margin-bottom: var(--spacing-xl);
@@ -98,7 +98,7 @@
 }
 
 .FormationsTable tr {
-    background-color: var(--card-color);
+    background-color: var(--cv-card-color);
     transition: background-color var(--transition-fast);
 }
 

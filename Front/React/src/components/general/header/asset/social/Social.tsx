@@ -1,6 +1,6 @@
 import React from "react";
 import "./styleSocial.css";
-import {Github, Linkedin, UserProfile} from "../Svg/Svg";
+import {Github, Linkedin, UserProfile} from "../svg/Svg";
 
 export default function Social() {
     return (
