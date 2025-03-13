@@ -32,10 +32,11 @@
     --header-responsive-media-width : 951px;
 
     --header-height : clamp(70px, 10vw, 110px);
-    --title-font-size: clamp(24px, 4vw, 35px);
+    --cv-title-font-size: clamp(10px, 4vw, 28px);
+    --cv-h2-font-size: clamp(20px, 1vw, 10px);
     --nav-font-size: clamp(16px, 2.5vw, 25px);
     --icon-size: clamp(25px, 3vw, 35px);
-    --font-size-date: clamp(12px, 1.8vw, 16px);
+    --cv-font-size-date: clamp(12px, 1.8vw, 16px);
 
     --spacing-sm: 0.5rem;
     --spacing-md: 1rem;
@@ -105,7 +106,7 @@
     --text-header-color: #ffffff;
     --border-color: #ffffff;
     --cv-card-color: #282828;
-    --title-color: #ffffff;
+    --cv-title-color: #ffffff;
     --text-color: #ffffff;
     --primary-color: #575757;
     --secondary-color: #121212;

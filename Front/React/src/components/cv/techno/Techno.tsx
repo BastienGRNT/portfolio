@@ -35,9 +35,9 @@ export default function Technos() {
                 </p>
             </div>
             {technos.map(techno => (
-                <div className="TechnoCompetence" key={techno.technologieId}>
+                <div className="TechnoLangageCompetence" key={techno.technologieId}>
                     <img src={techno.iconePath} alt={techno.nom} />
-                    <p className="TechnoNom">{techno.nom}</p>
+                    <p className="TechnoLangageNom">{techno.nom}</p>
                 </div>
             ))}
         </div>

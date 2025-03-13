@@ -91,7 +91,7 @@
     }
 
     .EtudeTitre {
-        font-size: calc(var(--title-font-size) * 0.9);
+        font-size: calc(var(--cv-title-font-size) * 0.9);
     }
 
     .Lieux {

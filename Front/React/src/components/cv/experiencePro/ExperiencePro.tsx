@@ -38,7 +38,7 @@ export default function ExperiencePro(){
         <div className="experiences">
             <div className="CvTitreDiv">
                 <p className="CvTitre">
-                    Experience Profesionnel
+                    EXPERIENCE PROFESIONNEL
                 </p>
             </div>
             <div className="experiences-wrapper">
@@ -49,6 +49,7 @@ export default function ExperiencePro(){
                         </div>
                         <div className="DivExpDesc">
                             <p className="ExpDesc">{experience.description}</p>
+                            <p> - </p>
                             <time className="ExpDateD">
                                 {new Date(experience.dateDebut).toLocaleDateString()}
                             </time>

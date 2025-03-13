@@ -8,7 +8,7 @@
 
 .LangageAdminContainer h2 {
     font-family: var(--font-primary);
-    color: var(--title-color);
+    color: var(--cv-title-color);
     font-size: 1.8rem;
     margin-bottom: var(--spacing-lg);
     border-bottom: 3px solid var(--border-color);

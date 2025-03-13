@@ -2,7 +2,6 @@
     text-align: left;
     flex: 1;
     display: flex;
-    padding: clamp(5px, 1vw, 10px);
     gap: clamp(12px, 2vw, 20px);
 }
 
