@@ -2,28 +2,24 @@
     background-color: var(--cv-card-color);
     border-radius: var(--border-radius);
     border: var(--border-width) solid var(--border-color);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    padding: clamp(10px, 4vw, 10px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .TechnoLangageCompetence img {
-    width: 64px;
-    height: 64px;
+    width: clamp(2.5rem, 5vw, 4rem);
+    height: clamp(2.5rem, 5vw, 4rem);
     object-fit: contain;
-    margin-top: 25px;
+    margin: 10% 0;
 }
 
 .TechnoLangageCompetence {
     display: inline-block;
-    align-items: center;
-    gap: var(--spacing-sm);
-    transition: transform var(--transition-fast);
-    padding: clamp(10px, 4vw, 15px);
+    padding: clamp(0.625rem, 4vw, 0.9375rem);
 }
 
 .TechnoLangageNom {
     font-family: var(--font-alt), sans-serif;
-    font-size: calc(var(--nav-font-size) * 0.7);
+    font-size: clamp(0.625rem, 4vw, 0.9375rem);
     text-align: center;
     margin: 0;
 }

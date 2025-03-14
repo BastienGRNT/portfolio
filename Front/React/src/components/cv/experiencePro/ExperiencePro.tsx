@@ -41,25 +41,29 @@ export default function ExperiencePro(){
                     EXPERIENCE PROFESIONNEL
                 </p>
             </div>
-            <div className="experiences-wrapper">
+            <div className="wrapper">
                 {experiences.map((experience) => (
                     <div key={experience.experienceId} className="ExpCard">
                         <div className="DivExpTitre">
                             <p className="ExpTitre">{experience.titre}</p>
                         </div>
                         <div className="DivExpDesc">
-                            <p className="ExpDesc">{experience.description}</p>
-                            <p> - </p>
-                            <time className="ExpDateD">
-                                {new Date(experience.dateDebut).toLocaleDateString()}
-                            </time>
-                            {experience.dateFin !== null ? (
-                                <time className="ExpDateF">
-                                    {new Date(experience.dateFin).toLocaleDateString()}
+                            <div className="DivDesc">
+                                <p className="ExpDesc">{experience.description}</p>
+                            </div>
+                            <div className="DivDate">
+                                <p> - </p>
+                                <time className="ExpDateD">
+                                    {new Date(experience.dateDebut).toLocaleDateString()}
                                 </time>
-                            ) : (
-                                <p className="ExpDateA">Aujourd'hui</p>
-                            )}
+                                {experience.dateFin !== null ? (
+                                    <time className="ExpDateF">
+                                        {new Date(experience.dateFin).toLocaleDateString()}
+                                    </time>
+                                ) : (
+                                    <p className="ExpDateA">Aujourd'hui</p>
+                                )}
+                            </div>
                         </div>
                         <div className="ExpCompetenceDiv">
                             {experience.competences.length > 0 && (

@@ -37,7 +37,7 @@ export default function Langage() {
             {langages.map(langage => (
                 <div className="TechnoLangageCompetence" key={langage.langageId}>
                     <img src={langage.iconePath} alt={langage.nom} />
-                    <p className="TechnoLangageNom">{langage.nom}</p>
+                    <p className="TechnoLangageNom">{langage.nom.toUpperCase()}</p>
                 </div>
             ))}
         </div>

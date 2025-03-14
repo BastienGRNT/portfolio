@@ -5,7 +5,7 @@ import "./styleDiversAdmin.css";
 
 const API = "http://localhost:5064/api/divers";
 
-interface Divers {
+interface AdminDivers {
     diversId: number;
     description: string;
 }
@@ -15,7 +15,7 @@ interface NewDivers {
 }
 
 export default function DiversAdmin() {
-    const [divers, setDivers] = useState<Divers[]>([]);
+    const [divers, setDivers] = useState<AdminDivers[]>([]);
     const [newDivers, setNewDivers] = useState<NewDivers>({
         description: "",
     });
@@ -26,7 +26,7 @@ export default function DiversAdmin() {
 
     const fetchDivers = async () => {
         try {
-            const response = await axios.get<Divers[]>(API);
+            const response = await axios.get<AdminDivers[]>(API);
             setDivers(response.data);
         } catch (error) {
             console.log("Erreur lors de la récupération des divers :", error);

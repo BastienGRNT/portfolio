@@ -1,53 +1,77 @@
-.container {  display: grid;
-    margin-top: 15px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1.7fr 1.8fr 1fr 1fr;
-    gap: 15px 15px;
+.container {
+    display: grid;
+    margin: 40px 0;
+    grid-template-columns: 0.6fr 1fr 1fr 1fr 1fr 0.6fr;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 15px;
     grid-auto-flow: row;
     grid-template-areas:
     ". LangageCompetenceCard LangageCompetenceCard TechnoCompetenceCard TechnoCompetenceCard ."
-    ". experiences experiences HardSkillsCard HardSkillsCard ."
-    ". experiences experiences HardSkillsCard HardSkillsCard ."
-    ". experiences experiences EtudesCard EtudesCard ."
-    ". experiences experiences EtudesCard EtudesCard ."
+    ". experiences experiences rightColumn rightColumn ."
     ". FormationCard FormationCard FormationCard FormationCard ."
     ". DiversCard DiversCard CentreInteretCard CentreInteretCard .";
 }
 
-.LangageCompetenceCard {grid-area: LangageCompetenceCard}
-
-.TechnoCompetenceCard { grid-area: TechnoCompetenceCard; }
-
-.experiences { grid-area: experiences; }
-
-.HardSkillsCard { grid-area: HardSkillsCard; }
-
-.EtudesCard { grid-area: EtudesCard; }
-
-.FormationCard { grid-area: FormationCard; }
-
-.DiversCard { grid-area: DiversCard; }
-
-.CentreInteretCard { grid-area: CentreInteretCard; }
-
-
-.LangageCompetenceCard, .TechnoCompetenceCard, .experiences,
-.HardSkillsCard, .EtudesCard, .FormationCard, .DiversCard, .CentreInteretCard {
-
+.rightColumn {
+    grid-area: rightColumn;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 120vh;
 }
+
+.hardskill {
+    height: fit-content;
+}
+
+.etudes {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+/* Le reste du CSS reste inchangé */
+.LangageCompetenceCard {grid-area: LangageCompetenceCard}
+.TechnoCompetenceCard {grid-area: TechnoCompetenceCard}
+.experiences {
+    grid-area: experiences;
+    max-height: 120vh;
+}
+.formation {grid-area: FormationCard}
+.diver {grid-area: DiversCard}
+.interet {grid-area: CentreInteretCard}
+
 
 
 
 .CvTitre {
     font-family: var(--font-primary), sans-serif;
-    font-size: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    font-size: clamp(1.2rem, 4vw, 2.1rem);;
+    margin: 2% 1%;
     color: var(--border-color);
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .CvTitreDiv {
     border-bottom: 5px solid var(--border-color);
 }
 
+.wrapper {
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) transparent;
+    height: calc(100% - 115px);
+    min-height: 0;
+}
+
+.wrapper::-webkit-scrollbar {
+    width: 8px;
+}
+
+.wrapper::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 4px;
+}

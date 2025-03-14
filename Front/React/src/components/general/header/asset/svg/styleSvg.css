@@ -2,7 +2,7 @@
 .LinkedinSvg,
 .UserProfileSvg,
 .MenuBurgerSvg {
-    width: clamp(20px, 10vw, 38px);
-    height: clamp(20px, 10vw, 38px);
+    width: clamp(1.25rem, 10vw, 2.375rem);
+    height: clamp(1.25rem, 10vw, 2.375rem);
     color: var(--header-socialIcon-color);
 }

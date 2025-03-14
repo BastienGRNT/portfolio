@@ -29,17 +29,19 @@ export default function CentresInteret() {
     }
 
     return (
-        <div className="CentreInteretCard">
+        <div className="interet">
             <div className="CvTitreDiv">
                 <p className="CvTitre">
                     Centre d'interet
                 </p>
             </div>
-            {centreInteret.map((centreInterets) => (
-                <div className="CentreInteret" key={centreInterets.idCentreInteret}>
-                    <p className="CentreInteret">{centreInterets.nom}</p>
-                </div>
+            <div className="CentreInteretCard">
+                {centreInteret.map((centreInterets) => (
+                    <div className="CentreInteret" key={centreInterets.idCentreInteret}>
+                        <p className="CentreInteret">{centreInterets.nom}</p>
+                    </div>
                 ))}
+            </div>
         </div>
     )
 }

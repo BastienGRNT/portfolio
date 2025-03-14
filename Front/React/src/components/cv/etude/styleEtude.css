@@ -1,4 +1,43 @@
+.etudes {
+    background-color: var(--cv-card-color);
+    border-radius: var(--border-radius);
+    border: var(--border-width) solid var(--border-color);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
 
+.EtudeCard {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.125rem solid black;
+    gap: 0.6rem;
+    padding: 0.625rem;
+}
+
+.DescEtude {
+    font-family: var(--font-primary), sans-serif;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    color: var(--primary-color);
+    letter-spacing: 0.0625rem;
+}
+
+.ExpDateD, .ExpDateF, .ExpDateA {
+    font-family: var(--font-alt), sans-serif;
+    font-size: clamp(0.5rem, 2vw, 1rem);
+    opacity: 0.7;
+}
+
+.EtudeInfo {
+    display: flex;
+    align-items: center;
+    gap: 0.9375rem;
+    flex-wrap: wrap;
+    margin: 0.625rem 0;
+}
+
+.Lieux {
+    font-size: var(--cv-h2-font-size);
+    font-family: var(--font-secondary), sans-serif;
+}
 
 
 

@@ -13,8 +13,10 @@ export default function Cv() {
         <div className="container">
             <Technos/>
             <ExperiencePro/>
-            <HardSkills/>
-            <Etudes/>
+            <div className="rightColumn">
+                <HardSkills/>
+                <Etudes/>
+            </div>
             <Formations/>
             <Divers/>
             <CentresInteret/>

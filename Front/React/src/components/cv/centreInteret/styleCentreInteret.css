@@ -1,4 +1,20 @@
+.interet {
+    background-color: var(--cv-card-color);
+    border-radius: var(--border-radius);
+    border: var(--border-width) solid var(--border-color);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
 
+.CentreInteretCard {
+    gap: 0.9375rem;
+    padding: 0.625rem;
+}
+
+.CentreInteret {
+    font-family: var(--font-alt), sans-serif;
+    font-size: clamp(0.8rem, 2vw, 1.3rem);
+    padding: 0.1rem;
+}
 
 
 

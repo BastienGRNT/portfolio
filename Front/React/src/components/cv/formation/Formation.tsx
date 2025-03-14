@@ -28,17 +28,20 @@ export default function Formations() {
     }
 
     return (
-        <div className="FormationCard">
+        <div className="formation">
             <div className="CvTitreDiv">
                 <p className="CvTitre">
                     Formations Pro
                 </p>
             </div>
-            {formations.map((formation) => (
-                <div className="formationDiv" key={formation.formationId}>
-                    <p className="formation">{formation.nom}</p>
-                </div>
-            ))}
+            <div className="FormationCard">
+                {formations.map((formation) => (
+                    <div className="formationDiv" key={formation.formationId}>
+                        <p className="DescFormation">{formation.nom}</p>
+                    </div>
+                ))}
+            </div>
         </div>
+
     )
 }

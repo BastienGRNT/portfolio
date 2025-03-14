@@ -32,32 +32,35 @@ export default function Etudes() {
     }
 
     return (
-        <div className="EtudesCard">
+        <div className="etudes">
             <div className="CvTitreDiv">
                 <p className="CvTitre">
                     Etudes
                 </p>
             </div>
-            {etudes.map((etude) => (
-                <div className="EtudeCard" key={etude.etudeId}>
-                    <div className="DescEtude">
-                        <p className="EtudeTitre">{etude.titre}</p>
-                    </div>
-                    <div className="EtudeInfo">
-                        <time className="dateD">
-                            {new Date(etude.dateDebut).toLocaleDateString()}
-                        </time>
-                        {etude.dateFin !== null ? (
-                            <time className="ExpDateF">
-                                {new Date(etude.dateFin).toLocaleDateString()}
+            <div className="wrapper">
+                {etudes.map((etude) => (
+                    <div className="EtudeCard" key={etude.etudeId}>
+                        <div className="DescEtude">
+                            <p className="EtudeTitre">{etude.titre}</p>
+                        </div>
+                        <div className="EtudeInfo">
+                            <p className="Lieux">{etude.lieu}</p>
+                            <p> - </p>
+                            <time className="ExpDateD">
+                                {new Date(etude.dateDebut).toLocaleDateString()}
                             </time>
-                        ) : (
-                            <p className="DateFinNull">Aujourd'hui</p>
-                        )}
-                        <p className="Lieux">{etude.lieu}</p>
+                            {etude.dateFin !== null ? (
+                                <time className="ExpDateF">
+                                    {new Date(etude.dateFin).toLocaleDateString()}
+                                </time>
+                            ) : (
+                                <p className="ExpDateA">Aujourd'hui</p>
+                            )}
+                        </div>
                     </div>
-                </div>
-            ))}
+                ))}
+            </div>
         </div>
     )
 }

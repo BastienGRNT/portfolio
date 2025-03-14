@@ -37,7 +37,7 @@ export default function Technos() {
             {technos.map(techno => (
                 <div className="TechnoLangageCompetence" key={techno.technologieId}>
                     <img src={techno.iconePath} alt={techno.nom} />
-                    <p className="TechnoLangageNom">{techno.nom}</p>
+                    <p className="TechnoLangageNom">{techno.nom.toUpperCase()}</p>
                 </div>
             ))}
         </div>

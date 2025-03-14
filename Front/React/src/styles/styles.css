@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'SharpGroteskBold';
     src: url('../../public/fonts/SharpGrotesk-Bold20.otf') format('opentype');

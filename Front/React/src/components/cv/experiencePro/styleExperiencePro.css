@@ -2,61 +2,46 @@
     background-color: var(--cv-card-color);
     border-radius: var(--border-radius);
     border: var(--border-width) solid var(--border-color);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    margin: 0;
-    padding: 0;
-    gap: 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .ExpCard {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid var(--border-color);
-    margin: 0;
-    padding: 0;
-    gap: 0;
+    border-bottom: 0.125rem solid black;
+    gap: 0.9375rem;
+    padding: 0.625rem;
 }
 
-.DivExpTitre {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    gap: 0;
-}
 
 .ExpTitre {
-    font-family: var(--font-secondary), sans-serif;
-    font-size: var(--cv-title-font-size);
-    color: var(--cv-title-color);
-    margin: 0;
-    padding: 0;
-    gap: 0;
+    font-family: var(--font-primary), sans-serif;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    color: var(--primary-color);
+    letter-spacing: 0.0625rem;
 }
 
 .DivExpDesc {
     display: flex;
     align-items: center;
-    margin: 0;
-    padding: 0;
-    gap: 0;
+    gap: 0.9375rem;
+    flex-wrap: wrap;
 }
 
 .ExpDesc {
     font-size: var(--cv-h2-font-size);
     font-family: var(--font-secondary), sans-serif;
-    margin: 0;
-    padding: 0;
-    gap: 0;
+}
+
+.DivDate {
+    display: flex;
+    gap: 0.9375rem;
 }
 
 .ExpDateD, .ExpDateF, .ExpDateA {
-    text-wrap: no-wrap;
     font-family: var(--font-alt), sans-serif;
-    font-size: var(--cv-font-size-date);
+    font-size: clamp(0.5rem, 2vw, 1rem);
     opacity: 0.7;
-    margin: 0;
-    padding: 0;
-    gap: 0;
 }
 
 .ExpCompetence {
@@ -64,8 +49,8 @@
     color: var(--competence-color);
     font-family: var(--font-secondary), sans-serif;
     border-radius: calc(var(--border-radius) / 2);
-    font-size: calc(var(--nav-font-size) * 0.7);
-    margin: 0;
-    padding: 0;
-    gap: 0;
+    font-size: clamp(0.5rem, 2vw, 1rem);
+    padding: 0.625rem;
+    margin: 0.9375rem 0;
 }
+

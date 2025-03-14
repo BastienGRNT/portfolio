@@ -1,4 +1,20 @@
+.formation {
+    background-color: var(--cv-card-color);
+    border-radius: var(--border-radius);
+    border: var(--border-width) solid var(--border-color);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
 
+.FormationCard {
+    gap: 0.9375rem;
+    padding: 0.625rem;
+}
+
+.DescFormation {
+    font-size: var(--cv-h2-font-size);
+    font-family: var(--font-secondary), sans-serif;
+    padding: 0.4rem;
+}
 
 /*
 .FormationCard {
