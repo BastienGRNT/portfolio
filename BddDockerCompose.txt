@@ -1,0 +1,23 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: X
+    restart: always
+    ports:
+      - "543X:5432"
+    environment:
+      POSTGRES_USER: X
+      POSTGRES_PASSWORD: X
+      POSTGRES_DB: X
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - pgnet
+
+volumes:
+  pgdata:
+
+networks:
+  pgnet:
+    driver: bridge
+

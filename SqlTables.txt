@@ -1,0 +1,140 @@
+--------------------------------------------------
+--------------------------------------------------
+SQL Tables
+--------------------------------------------------
+--------------------------------------------------
+
+
+
+--------------------------------------------------
+Projet :
+
+CREATE TABLE Project (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(255),
+  description TEXT,
+  imagePath VARCHAR(255),
+  githubUrl VARCHAR(255),
+  liveUrl VARCHAR(255) NULL,
+  date DATE
+);
+
+CREATE TABLE ProjectProgrammingLanguages (
+  projectId INT,
+  programmingLanguageName VARCHAR(255),
+  programmingLanguagePath VARCHAR(255),
+  FOREIGN KEY (projectId) REFERENCES Project(id)
+);
+--------------------------------------------------
+
+
+
+--------------------------------------------------
+Cv :
+
+CREATE TABLE Education (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(255),
+  school VARCHAR(255),
+  startDate DATE,
+  endDate DATE NULL,
+  description TEXT
+);
+
+CREATE TABLE EducationSkill (
+  educationId INT,
+  skill VARCHAR(255),
+  FOREIGN KEY (educationId) REFERENCES Education(id)
+);
+
+CREATE TABLE EducationSoftSkill (
+  educationId INT,
+  softSkill VARCHAR(255),
+  FOREIGN KEY (educationId) REFERENCES Education(id)
+);
+
+CREATE TABLE Training (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(255),
+  issuer VARCHAR(255),
+  date DATE,
+  description TEXT
+);
+
+CREATE TABLE TrainingSkill (
+  trainingId INT,
+  skill VARCHAR(255),
+  FOREIGN KEY (trainingId) REFERENCES Traning(id)
+);
+
+CREATE TABLE TrainingSoftSkill (
+  trainingId INT,
+  softSkill VARCHAR(255),
+  FOREIGN KEY (trainingId) REFERENCES Traning(id)
+);
+
+CREATE TABLE HardSkill (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(255)
+);
+
+CREATE TABLE Other (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(255)
+);
+
+CREATE TABLE Hobbies (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(255)
+);
+
+CREATE TABLE ContactInfo (
+  email VARCHAR(255) PRIMARY KEY,
+  phone VARCHAR(50),
+  location VARCHAR(255),
+  github VARCHAR(255),
+  linkedin VARCHAR(255)
+);
+
+CREATE TABLE PersonalInfo (
+  firstName VARCHAR(255),
+  lastName VARCHAR(255),
+  jobTitle VARCHAR(100),
+  bio TEXT,
+  PRIMARY KEY (firstName)
+);
+
+
+--------------------------------------------------
+Upload :
+
+CREATE TABLE Technology (
+  id SERIAL PRIMARY KEY,
+  technologyName VARCHAR(255),
+  technologieUrl VARCHAR(255),
+  fileGuid VARCHAR(255),
+  fileExtension VARCHAR(50),
+  fileName VARCHAR(255),
+  filePath VARCHAR(255)
+);
+
+CREATE TABLE Tool (
+  id SERIAL PRIMARY KEY,
+  toolName VARCHAR(255),
+  toolUrl VARCHAR(255),
+  fileGuid VARCHAR(255),
+  fileExtension VARCHAR(50),
+  fileName VARCHAR(255),
+  filePath VARCHAR(255)
+);
+
+CREATE TABLE Image (
+  id SERIAL PRIMARY KEY,
+  imageName VARCHAR(255),
+  imageUrl VARCHAR(255),
+  fileGuid VARCHAR(255),
+  fileExtension VARCHAR(50),
+  fileName VARCHAR(255),
+  filePath VARCHAR(255)
+);
+--------------------------------------------------

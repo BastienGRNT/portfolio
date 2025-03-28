@@ -1,0 +1,156 @@
+--------------------------------------------------
+--------------------------------------------------
+React Interface
+--------------------------------------------------
+--------------------------------------------------
+
+
+
+--------------------------------------------------
+Projet :
+
+export interface Project {
+  id : number 
+  title : string 
+  description : string
+  imagePath : string
+  programmingLanguageName : string[]
+  programmingLanguageUrl : string[]
+  githubUrl : string
+  liveUrl : string || null
+  date : string
+}
+--------------------------------------------------
+
+
+
+--------------------------------------------------
+Cv :
+
+export interface Technology {
+  id : number
+  technologyName : string
+  technologieUrl : string
+}
+
+export interface ProgrammingLanguage {
+  id : number
+  ProgrammingLanguageName : string
+  programmingLanguageUrl : string
+}
+
+export interface Tool {
+  id : number
+  ToolName: string
+  toolUrl : string
+}
+
+export interface WorkExperience {
+  id : number
+  title : string
+  company : string
+  skills : string[]
+  softSkills : string[]  | null
+  startDate : string
+  endDate : string | null
+  description : string
+}
+
+export interface Education {
+  id : number
+  title : string
+  school : string
+  skills : string[]
+  softSkills : string[]  | null
+  startDate : string
+  endDate : string | null
+  description : string
+}
+
+export interface Training {
+  id : number
+  title : string
+  issuer : string
+  skills : string[]
+  softSkills : string[] | null
+  date : string
+  description : string
+}
+
+export public interface Skill {
+  id : int
+  title : string
+}
+
+export public interface Other {
+  id : int
+  title : string
+}
+
+export public interface Hobbies {
+  id : int
+  title : string
+}
+
+export interface ContactInfo {
+  email : string
+  phone : string
+  location : string
+  github : string
+  linkedin : string
+}
+
+export interface PersonalInfo {
+  firstName : string
+  lastName : string
+  jobTitle : string
+  bio : string
+  contact : ContactInfo
+}
+--------------------------------------------------
+
+
+
+--------------------------------------------------
+Upload :
+
+export interface TechnologyFile {
+  id : number
+  technologyName : string
+  technologieUrl : string
+  fileGuid : string
+  fileExtension : string
+  fileName : string
+  filePath : string
+}
+
+export interface ProgrammingLanguageFile {
+  id : number
+  ProgrammingLanguageName : string
+  programmingLanguageUrl : string
+  fileGuid : string
+  fileExtension : string
+  fileName : string
+  filePath : string
+}
+
+export interface ToolFile {
+  id : number
+  ToolName: string
+  toolUrl : string
+  fileGuid : string
+  fileExtension : string
+  fileName : string
+  filePath : string
+}
+
+export interface ImageFile {
+  id : number
+  ImageName: string
+  imageUrl : string
+  fileGuid : string
+  fileExtension : string
+  fileName : string
+  filePath : string
+}
+--------------------------------------------------

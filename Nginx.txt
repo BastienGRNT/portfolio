@@ -1,0 +1,44 @@
+server {
+    listen 80;
+    server_name bastiengrnt.fr www.bastiengrnt.fr;
+    
+    # Redirection vers HTTPS
+    location / {
+        return 301 https://$host$request_uri;
+    }
+}
+
+server {
+    listen 443 ssl;
+    server_name bastiengrnt.fr www.bastiengrnt.fr;
+    
+    # Certificats SSL
+    ssl_certificate /etc/letsencrypt/live/bastiengrnt.fr/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/bastiengrnt.fr/privkey.pem;
+    
+    # Paramètres SSL recommandés
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_prefer_server_ciphers on;
+    ssl_ciphers "EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH";
+    ssl_session_cache shared:SSL:10m;
+    ssl_session_timeout 1d;
+    
+    # Application React
+    location / {
+        root /var/www/bastiengrnt.fr;
+        try_files $uri $uri/ /index.html;
+    }
+        
+    # Dossier d'upload pour les images
+    location / {
+        alias /var/www/images/;
+        try_files $uri $uri/ =404;
+    }
+    
+    # Dossier d'upload pour les technologies
+    location / {
+        alias /var/www/technos/;
+        try_files $uri $uri/ =404;
+    }
+}
+

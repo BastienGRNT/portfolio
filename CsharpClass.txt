@@ -1,0 +1,150 @@
+--------------------------------------------------
+--------------------------------------------------
+C# Class
+--------------------------------------------------
+--------------------------------------------------
+
+
+
+--------------------------------------------------
+Projet :
+
+public class Project {
+  public int id { get; set; }
+  public string title { get; set; }
+  public string description { get; set; }
+  public string imagePath { get; set; }
+  public List<string> programmingLanguageName { get; set; }
+  public List<string> programmingLanguageUrl { get; set; }
+  public string githubUrl { get; set; }
+  public string? liveUrl { get; set; }
+  public string date { get; set; }
+}
+
+
+--------------------------------------------------
+
+
+
+--------------------------------------------------
+Cv :
+
+public class TechnologyFile {
+  public int id { get; set; }
+  public string technologyName { get; set; }
+  public string technologieUrl { get; set; }
+}
+
+public class ProgrammingLanguage {
+  public int id { get; set; }
+  public string ProgrammingLanguageName { get; set; }
+  public string programmingLanguageUrl { get; set; }
+}
+
+public class ToolFile {
+  public int id { get; set; }
+  public string ToolName { get; set; }
+  public string toolUrl { get; set; }
+}
+
+public class Education {
+  public int id { get; set; }
+  public string title { get; set; }
+  public string school { get; set; }
+  public List<string> skills { get; set; }
+  public List<string> softSkills { get; set; }
+  public string startDate { get; set; }
+  public string? endDate { get; set; }
+  public string description { get; set; }
+}
+
+public class Training {
+  public int id { get; set; }
+  public string title { get; set; }
+  public string issuer { get; set; }
+  public List<string> skills { get; set; }
+  public List<string> softSkills { get; set; }
+  public string date { get; set; }
+  public string description { get; set; }
+}
+
+public class HardSkill 
+{
+  public int id { get; set; }
+  public string title { get; set; }
+}
+
+public class Other
+{
+  public int id { get; set; }
+  public string title { get; set; }
+}
+
+public class Hobbies
+{
+  public int id { get; set; }
+  public string title { get; set; }
+}
+
+public class ContactInfo {
+  public string email { get; set; }
+  public string phone { get; set; }
+  public string location { get; set; }
+  public string github { get; set; }
+  public string linkedin { get; set; }
+}
+
+public class PersonalInfo {
+  public string firstName { get; set; }  // Prénom
+  public string lastName { get; set; }   // Nom
+  public string jobTitle { get; set; }   // Job
+  public string bio { get; set; }        // Bio
+  public ContactInfo contact { get; set; }  // Informations de contact
+}
+--------------------------------------------------
+
+
+
+--------------------------------------------------
+Upload :
+
+public class TechnologyFile {
+  public int id { get; set; }
+  public string technologyName { get; set; }
+  public string technologieUrl { get; set; }
+  public string fileGuid { get; set; }
+  public string fileExtension { get; set; }
+  public string fileName { get; set; }
+  public string filePath { get; set; }
+}
+
+public class ProgrammingLanguageFile {
+  public int id { get; set; }
+  public string ProgrammingLanguageName { get; set; }
+  public string programmingLanguageUrl { get; set; }
+  public string fileGuid { get; set; }
+  public string fileExtension { get; set; }
+  public string fileName { get; set; }
+  public string filePath { get; set; }
+}
+
+public class ToolFile {
+  public int id { get; set; }
+  public string ToolName { get; set; }
+  public string toolUrl { get; set; }
+  public string fileGuid { get; set; }
+  public string fileExtension { get; set; }
+  public string fileName { get; set; }
+  public string filePath { get; set; }
+}
+
+public class ImageFile {
+  public int id { get; set; }
+  public string ImageName { get; set; }
+  public string imageUrl { get; set; }
+  public string fileGuid { get; set; }
+  public string fileExtension { get; set; }
+  public string fileName { get; set; }
+  public string filePath { get; set; }
+}
+--------------------------------------------------
